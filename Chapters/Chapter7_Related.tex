@@ -1,0 +1,268 @@
+\lhead{\emph{\leftmark}}  
+\chapter{Related Work}
+\label{chap:related}
+This chapter surveys previous work in reverse engineering approaches, and relates them to the work presented in this thesis. We will take a close look at studies that focused on generating UML models from source code written in object-oriented programming languages.
+The following section describes the literature review methodology. We then present the results of our findings and a comparison between the different approaches and our own approach. 
+
+\section{Literature Review Methodology}
+
+This study has been undertaken as a literature review based on some of the guidelines proposed by Kitchenham \cite{kitchenham2004procedures}. Key parts of this systematic literature review are presented in this thesis.
+
+\paragraph*{Research Question}
+
+The main goal of this systematic review was to identify and classify different techniques for reverse engineering to UML. Specifically, we target the reverse engineering to UML of software systems by means of transformations. The high-level research question addressed by this study is:
+
+\textit{What transformation techniques and/or methodologies for reverse engineering to UML can be identified from the literature?}
+
+\paragraph*{Search process}
+
+To search the databases, a set of strings was first created for each of the research questions based on keywords extracted from the research question, augmented with synonyms.
+
+We designed a two-phase systematic review. In both phases, we searched for papers (including cited references) using the search engines in Table \ref{table:sourcesReviewed}. We then performed analyses of the related work to select a subset of papers that were truly relevant
+
+In the first phase we paid special attention to  existing surveys and literature review papers to ensure we found any literature review answering our research question.
+In the second phase we  focused on technology and techniques, as opposed to existing reviews. 
+
+\begin{table}[ht]
+\caption{Selected sources for the literature search}
+\label{table:sourcesReviewed}
+\centering
+\begin{tabular}{ll}
+\toprule
+\rowcolor[HTML]{BBDAFF}
+\textbf{Source}   & \textbf{Acronym} \\ 
+\hline
+IEEE Xplore	& IEEE   \\ 
+ACM Digital Library &	ACM   \\ 
+Springer Link	&SL   \\ 
+Elsevier	&EV   \\ 
+Scopus & SC   \\ 
+Google Scholar &	GS   \\ 
+Science Direct &	SD   \\ 
+\hline
+\end{tabular}
+\end{table}
+
+The sources for the search were chosen such that they included journals and conferences focusing on software engineering and program comprehension. 
+
+The search resulted in an extensive list of potential papers. To ensure that all papers included in the review were related to the research questions, we defined detailed inclusion and exclusion criteria.  
+
+\paragraph*{First Phase Queries and Results}
+
+In the first phase of the review we used the following queries:
+Related terms such as `design recovery' or `class diagram' `recovery' or `static' or `dynamic' were employed when some expected (already known/classified) papers did not appear as part of the results.
+
+\begin{itemize}
+\item `Reverse engineering' \textbf{AND}  UML \textbf{AND} `Survey'  4610 results
+\item `Reverse engineering' \textbf{AND}  UML \textbf{AND} `systematic review' 210 results
+\item `Reverse engineering' \textbf{AND}  UML \textbf{AND} `literature review' 669 results
+\item `Reverse engineering' \textbf{AND}  UML \textbf{AND} `taxonomy' 22 results
+\end{itemize}
+
+By limiting the search to titles of articles, in the manner discussed below, we reduced the search results to a total of 33 papers. After manual inspection, only 5 papers were retained \cite{surveyMens},\cite{biehl2010literature}, \cite{DynamicSurvey}, \cite{Nelson1996} and \cite{Chikofsky}. 
+
+The queries used in the second phase are enumerated below:
+
+\paragraph*{Second Phase Queries}
+
+\begin{itemize}
+\item `Reverse engineering' \textbf{AND}  UML 
+\item `Reverse engineering' \textbf{AND}  UML \textbf{AND} `class diagrams'
+\item `Reverse engineering' \textbf{AND}  UML \textbf{AND}  `attributes'
+\item `Reverse engineering' \textbf{AND}  UML \textbf{AND} `associations'
+\end{itemize}
+
+\paragraph*{Inclusion and exclusion criteria}
+
+The databases searches resulted in an extensive list of potential papers. To ensure that all papers included in the review were clearly related and relevant to the research questions, detailed inclusion and exclusion criteria were defined. These criteria are summarized in Tables \ref{table:inclusionCriteria} - \ref{table:exclusionCriteria}. 
+ The process followed for filtering the search result was:
+
+\begin{enumerate}
+\item Use the title to eliminate any papers clearly not related to the research
+
+\item Use the abstract and keywords to exclude additional non-related papers
+
+\item Read the remaining papers and eliminate those that do not fulfill the criterion in Table \ref{table:inclusionCriteria}.
+\end{enumerate}
+
+\begin{table}[ht]
+\caption{Inclusion criteria}
+\label{table:inclusionCriteria}
+\centering
+\begin{tabular}{l}
+\toprule
+\rowcolor[HTML]{BBDAFF}
+\textbf{Inclusion criteria}    \\ \hline
+  Papers that focus on software comprehension   \\\hline
+  Papers that focus on software maintenance \\\hline
+  Papers that focus on restructuring and re-engineering  \\\hline
+  Papers describing model-to-model transformation techniques  \\\hline
+  Papers describing model-to-text transformation techniques  \\\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\caption{Exclusion criteria}
+\label{table:exclusionCriteria}
+\centering
+\begin{tabular}{l}
+\toprule
+\rowcolor[HTML]{BBDAFF}
+\textbf{Exclusion criteria}    \\ \hline
+   Short-papers, tutorials, mini-tracks and workshop papers \\ \hline
+   Studies whose results are not supported by any evidence or validated \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Results}
+
+In the next section, we list and explain the criteria employed to assess the papers retrieved after filtering the results from the second-phase queries. Only 28 papers were retained from the originally 78 retrieved. The papers retained can mainly be categorized based on what type of technique they rely on: static or dynamic analysis of source code. Tables \ref{table:relatedPapers1} and \ref{table:relatedPapers2} list the 21 papers. The third column of the tables indicates if the approach uses dynamic analysis, static analysis or an hybrid approach (static + dynamic).
+
+\begin{table}[h]
+\caption{Filtered results from second-phase queries - Static approaches}
+\label{table:relatedPapers1}
+\centering
+\begin{tabular}{p{6cm}|p{5cm}|p{3cm}}
+\toprule
+\rowcolor[HTML]{BBDAFF}
+\textbf{Title}  & \textbf{Authors - Year - Ref} & \textbf{Category} \\ \midrule
+1. Mining design patterns from C++ source code & Balanyi et al. - 2003 - \cite{Balanyi2003} &  Static (Graph-Based)
+\\ \hline
+2. Extraction and use of class dependency information for Java & Barowski et al. - 2002 \cite{Barowski} & Static 
+\\ \hline
+3. Recovering concepts from source code with automated concept identification & Carey et al. - 2007 - \cite{recoveringconcepts} &  Static
+\\ \hline
+4. A Patterns based reverse engineering approach for Java source code & Couto et al. - 2012 - \cite{Couto2012} & Static
+\\ \hline
+5. Recovering class diagrams from data-intensive legacy systems & Lucca et al.  - 2000 - \citep{Lucca2000}  &  Static
+\\ \hline
+6. Reverse engineering co-maintenance relationships using conceptual analysis of source code & Grant et al. - 2011 - \cite{grant2011reverse} & Static
+\\ \hline
+7. A systematic study of UML class diagram constituents for their abstract and precise recovery & Guéhéneuc - 2004 - \cite{GueheneucSystematic} & Static
+\\ \hline
+8. On reverse engineering an object-oriented code into UML class diagrams incorporating extensible mechanisms & Vinita et al. - 2008 - \cite{Vinita2008} & Static
+\\ \hline 
+9. Reverse-engineering 1-n associations from Java bytecode using alias analysis & Kang et al. - 2007 - \cite{Kang2007} & Static
+\\ \hline
+10. UML-based reverse engineering and model analysis approaches for software architecture maintenance & Riva et al. - 2004 - \cite{1357789} & Static
+\\ \hline
+11. Recovering UML class models from C++: A detailed explanation & Sutton et al. - 2007 -  \cite{Sutton2007} & Static
+\\ \hline
+12. Towards an AST-based approach to reverse engineering & Wang et al. - 2006 - \cite{4054609} & Static
+\\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Filtered results from second-phase queries - Dynamic and hybrid approaches}
+\label{table:relatedPapers2}
+\centering
+\begin{tabular}{p{6cm}|p{5cm}|p{3cm}}
+\toprule
+\rowcolor[HTML]{BBDAFF}
+\textbf{Title}  & \textbf{Authors - Year - Ref} & \textbf{Category} \\ \midrule
+1. A simple static model for understanding the dynamic behavior of programs & Kelsen - 2004 - \cite{Kelsen2004} & Dynamic 
+\\ \hline
+2. Discovering Program's Behavioral Patterns by Inferring Graph-Grammars from Execution Traces &  Zhao et al. - 2008 - \cite{Zhao2008}& Dynamic (Traces)
+\\ \hline
+3. CPP2XMI: Reverse Engineering of UML Class, Sequence, and Activity Diagrams from C++ Source Code & Korshunova et al. - 2006 - \cite{cpp2xmi} & Hybrid
+\\ \hline
+4. Reverse engineering of design patterns from Java source code & Shi et al. - 2006 - \cite{4019568} & Dynamic
+\\ \hline
+5. Understanding applications through dynamic analysis & Antoniol et al. - 2004 - \cite{Penta2004Web} & Dynamic \\ \hline
+6. Reverse engineering of object oriented code & Tonella et al. - 2005 - \cite{1553682} & Hybrid
+ \\ \hline
+7. A fully dynamic approach to the reverse engineering of UML sequence diagrams & Ziadi et al. -  2011 - \cite{5773385} & Dynamic
+\\ \hline
+8. Mining design patterns from existing projects using static and run-time analysis & Dobis et al. - 2011 - \cite{Huzar2011} & Hybrid
+\\ \hline
+9. Reverse-engineering of UML 2.0 sequence diagrams from execution traces & Delamare et al. - 2006 - \cite{Delamare06} &  Dynamic
+\\ \bottomrule
+\end{tabular}
+\end{table}
+
+In the next subsection, we present the most relevant (most cited and very related to our work) papers found. 
+Although the results may convey that this area of research is mature enough, we believe there is still much work that can be done. The important fact is that the underlying research in this area makes us confident that our proposed approach contributes positively to the advancement of the reverse-engineering field.
+
+\subsection{Most Relevant Papers}
+
+A number of approaches have been presented in the literature for reverse engineering to discover associations and other related information from source code. Unlike our work, none of them is incremental or produces compilable artefacts. The majority of these produce in one single step a UML model derived from the source code \cite{Nelson1996}.
+
+In \cite{Kollmann2001}, Gogolla and Kollman present a technique using both static and dynamic analysis to recover UML class models from C++ source code. This approach defines one of the few techniques for finding bidirectional associations.
+
+In \cite{Barowski}, Barowski and Cross propose a technique to extract dependency information from Java bytecode. This approach, however, is not able to express correctly the multiplicity of the recovered associations.
+
+Sutton and Maletic \cite{Sutton2007} propose a set of mappings that are intended to recover design-level UML class models from source code. They present their prototype tool, Pilfer, and use it to reverse engineer HypoDraw \cite{Hypodraw}, an open source tool.
+Gueheneuc \cite{GueheneucSystematic} presents a technique that infers associations, aggregation and composition relationships from Java programs using graph theory. However, their approach requires the availability and analysis of both static and dynamic models to build the class diagrams.
+
+Commercial tools and widely used open source tools, including IBM Rational Software Architect \cite{ROSE}, Visual Paradigm \cite{VisualParadigm} and ArgoUML \cite{ArgoUML} lack configurability options and incremental reverse engineering capabilities. Moreover, they detect simple attributes, as well as one-way associations between classes but produce incomplete generated code (e.g. lacking methods and/or referential integrity) and fail to preserve semantics when the UML models derived from the tools are input in their own code generators \cite{kollmanToolsCurrent}. Some of the most popular reverse-engineering tools have been already discussed in Chapter \ref{chap:detections}.
+
+Systa in her paper \cite{Systa} presented a tool named Fujaba \cite{Systa} that combines static analysis (graph matching) and dynamic analysis to detect pattern implementations in source code. This is so far the most popular and cited research tool relevant to this research found in the literature.
+
+Bruneliere et al.\cite{ModiscoMain} introduced in their paper a model-driven reverse engineering tool, named Modisco, which has been developed as an Eclipse project and provides a set of generic tools to understand and transform complex models created out of existing systems. MoDisco uses JDT \cite{jdtProject} to discover Java elements in Java projects and allows the user to gather metrics and visualize results in a tree representation. Transformations can be performed on the discovered elements using another Eclipse technology, the ATL project \cite{jdtProject}, a model-to-model (M2M) transformation toolkit that we discussed earlier in this thesis.
+
+TXL \cite{Cordy2006} is a rule-based language designed for a variety of source-to-source transformations tasks. We experimented with TXL as well as with ATL to implement  umplification, and, as described earlier, conclude that the two technologies were not ideal for incremental transformation of multi-language input models (Umple, Java, Umple+Java, etc.). A core concept behind umplification is that we want tool support for incrementality. We need to be able to load and transform a target model, already (partially) transformed by our tool so that users can convert Umple to Umple in steps of their choosing, always passing test cases, and maintaining confidence of the results. Existing model transformation tools proved not readily suitable for the multi-language incremental mode of use.
+
+Paige et al. \cite{paigetowards} demonstrated the use of TXL in representing and for implementing efficient transformations between languages. A transformation from UML-to-Java were presented as part of their work. 
+
+\subsection{Evaluation for Papers on Reverse-Engineering into UML}
+
+ In this section, we list and define several important characteristics that we believe contribute to the comprehension of software systems. Our criteria emphasize the extraction of modeling constructs from source code.
+
+The evaluation criteria we will use are as follows: 
+\begin{itemize}
+
+\item Scalability:  This refers to how well the solution works when the size of the system being studied increases.
+
+\item Incrementality: This refers to the ability of the approach to be performed in incremental and small steps.
+
+\item Validation:  Has the solution been validated by other software practitioners? Fully if so, Partial if it has been validated only by the authors. 
+
+\item Usability: Is the tool easy to set up or use? N/A means that a tool is not available.
+
+\item Target Programming Language: The programming language(s) that can be input into the tool.
+
+\item Attributes Recovery: Is the approach/tool able to infer attributes from source code?
+
+\item Associations Recovery: Is the approach/tool able to infer all different types of associations from source code? 
+\end{itemize}
+
+The outcomes of our evaluation can be:
+
+\begin{itemize}
+\item \textit{None} indicates that the criterion is not met or there is no evidence about this in the paper (or papers from the same author on the same topic).
+
+\item \textit{Partial (P)} indicates that the criterion is partially satisfied.
+
+\item \textit{Fully (F)} indicates that the criterion is fully satisfied and there is clear evidence of this.
+
+\item \textit{N}  Not applicable. 
+\end{itemize}
+
+These criteria focus on how well the related studies solved the main topic of this thesis, i.e, reverse-engineering of object-oriented systems into UML. Note that the expected output from the techniques is UML and not Umple, as we are the first approach recovering Umple models from software systems.
+
+Table \ref{table:finalResults} shows the above criteria applied to the key papers. 
+
+\begin{table}[ht]
+\caption{Application of the evaluation criteria to the key papers}
+\label{table:finalResults}
+\centering
+\begin{tabularx}{\textwidth}{X|lllllll}
+\toprule
+\rowcolor[HTML]{BBDAFF}
+\textbf{Authors-Year-Ref}  & \rotatebox{90}{\textbf{Scalability}} & \rotatebox{90}{\textbf{Incrementality}}& \rotatebox{90}{\textbf{Validation}}& \rotatebox{90}{\textbf{Usability}}& \rotatebox{90}{\textbf{Target Prog. Lang.}} & \rotatebox{90}{\textbf{Attribute Recovery}}& \rotatebox{90}{\textbf{Associations Recovery}} \\ \hline
+Barowski et al. - 2002 \cite{Barowski} & N & N & P & N & Java  & P & P \\ \hline
+Grant et al. - 2011 - \cite{grant2011reverse} & P  & N & P &  F & Java  & F & P \\ \hline
+Gueeheneuc - 2004 - \cite{GueheneucSystematic} & P & P& F  & F &Java  & F & F \\ \hline
+Vinita et al. - 2008 - \cite{Vinita2008} & N & N & N & N & Cpp & P & P \\ \hline
+Kang et al. - 2007 - \cite{Kang2007} & N & N& N & F &Java & F & P \\ \hline
+Sutton et al. - 2007 -  \cite{Sutton2007} & N & N & P & F & Cpp & P & P\\ \hline
+Korshunova et al. - 2006 - \cite{cpp2xmi} & P & N & P & F & Cpp & F & P\\ \hline
+{Umplification} & \textbf{P} & \textbf{F} & \textbf{P}  & \textbf{F} & \textbf{Java,Cpp} & \textbf{F} & \textbf{P} \\ 
+\hline
+\end{tabularx}
+\end{table}
+
+What mainly differentiates our work from other work is incremental refactoring, the configurability of the mappings rules, the form of the output (model and code as a single entity), and the preservation of semantics when code is generated from the recovered models.
+
+As the last row of the  table indicates, our approach performs well for most of the covered criteria. However, one of the most important characteristics of our approach is that it can be easily extended to cover those missed parts.

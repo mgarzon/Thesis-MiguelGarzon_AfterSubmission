@@ -1,0 +1,86 @@
+q
+
+LATEX REFERENCES:
+Ref: \cite{einstein}
+
+in the Bibliography.bib:
+
+@article{einstein,
+    author =       "Albert Einstein",
+    title =        "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
+    [{On} the electrodynamics of moving bodies]",
+    journal =      "Annalen der Physik",
+    volume =       "322",
+    number =       "10",
+    pages =        "891--921",
+    year =         "1905",
+    DOI =          "http://dx.doi.org/10.1002/andp.19053221004",
+    keywords =     "physics"
+}
+ 
+----- FONT STYLE ----------
+Some of the \textbf{greatest} 
+discoveries in \underline{science} 
+were made by \textbf{\textit{accident}}.
+ 
+------------ LATEX LISTS --------------
+
+\begin{itemize}
+  \item One entry in the list
+  \item Another entry in the list
+\end{itemize}
+
+- Numbered lists:
+\begin{enumerate}
+  \item The labels consists of sequential numbers.
+  \item The numbers starts at 1 with every call to the enumerate environment.
+\end{enumerate}
+
+------------ LISTINGS --------------
+
+\begin{lstlisting}
+ code here
+\end{lstlisting}
+
+\begin{lstlisting}[style=umpleOut]
+
+\end{lstlisting}
+
+\begin{lstlisting}[style=umpleIn]
+
+\end{lstlisting}
+
+------------ IMAGES --------------
+
+\includegraphics[scale=1.5]{lion-logo}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\linewidth]{lion-logo.png}
+\caption{This image will be referenced below}
+\label{fig:lion}
+\end{figure}
+ 
+Reference:  \ref{fig:lion} 
+
+
+//listing in two columns
+
+\noindent\begin{minipage}{.49\textwidth}
+\begin{lstlisting}[style=umplePlain,caption]{Name}
+
+
+
+
+\end{lstlisting}
+\end{minipage}\hfill
+\begin{minipage}{.49\textwidth}
+\begin{lstlisting}[style=umplePlain]{Name}
+void code()
+{
+
+}
+\end{lstlisting}
+\end{minipage}
+
+In YUML, boring and tiny style.

@@ -1,0 +1,1511 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF8
+
+
+@TechReport{alanen2003,
+  Title                    = {A Relation Between Context-Free Grammars and Meta Object Facility Metamodels},
+  Author                   = {Marcus Alanen and Ivan Porres and Turku Centre and Computer Science},
+  Year                     = {2003}
+}
+
+@InProceedings{UmpleTracing,
+  Title                    = {{Specifying Trace Directives for UML Attributes and State Machines}},
+  Author                   = {Aljamaan, Hamoud and Lethbridge, Timothy C. and Badreddin, Omar and Guest, Geoffrey and Forward, Andrew},
+  Booktitle                = {International Conference on Model-Driven Engineering and Software Development},
+  Year                     = {2014},
+  Month                    = jan,
+  Pages                    = {79--86},
+
+  ISBN                     = {978-989-758-007-9},
+  Url                      = {http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0004711500790086}
+}
+
+@InProceedings{Penta2004Web,
+  Title                    = {Understanding Web applications through dynamic analysis},
+  Author                   = {Antoniol, G. and Di Penta, M. and Zazzara, M.},
+  Booktitle                = {Program Comprehension, 2004. Proceedings. 12th IEEE International Workshop on},
+  Year                     = {2004},
+  Month                    = {June},
+  Pages                    = {120-129},
+
+  Doi                      = {10.1109/WPC.2004.1311054},
+  ISSN                     = {1092-8138},
+  Keywords                 = {Internet;Unified Modeling Language;data warehouses;database management systems;diagrams;formal verification;middleware;reverse engineering;system documentation;systems analysis;Conallen UML diagrams;UML documentation;WANDA;Web application evolution;Web application maintenance;Web application understanding;Web services;data warehouses;databases;dynamic analysis;enterprise systems;middleware;program understanding;reverse engineering;scripting languages;Data warehouses;Databases;Documentation;Information analysis;Instruments;Middleware;Reverse engineering;Service oriented architecture;Unified modeling language;Web services}
+}
+
+@Misc{ArgoUML,
+  Title                    = {{ArgoUML Modeling Tool}},
+
+  Author                   = {ArgoUML},
+
+  Url                      = {http://argouml.tigris.org/},
+  Urldate                  = {2014-01-01}
+}
+
+@Book{ash2003web,
+  Title                    = {The Web Testing Companion: The Insider's Guide to Efficient and Effective Tests},
+  Author                   = {Ash, L.},
+  Publisher                = {Wiley},
+  Year                     = {2003},
+  Series                   = {Wiley technology publishing : timely, practical, reliable},
+
+  ISBN                     = {9780471430216},
+  Lccn                     = {2002156143},
+  Page                     = {17},
+  Url                      = {http://books.google.ca/books?id=tUYo644-SYcC}
+}
+
+@InProceedings{OOPSLA2004Bezivin,
+  Title                    = {On the Need for Megamodels},
+  Author                   = {B{\'{e}}zivin, Jean and Jouault, Fr{\'{e}}d{\'{e}}ric and Valduriez, Patrick},
+  Booktitle                = {Proceedings of the OOPSLA/GPCE: Best Practices for Model-Driven Software Development workshop, 19\textsuperscript{th} Annual ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications},
+  Year                     = {2004},
+
+  Added-at                 = {2008-08-17T17:02:50.000+0200},
+  Authorurls               = {http://www.sciences.univ-nantes.fr/lina/atl/Members/bezivin and http://www.sciences.univ-nantes.fr/lina/atl/Members/jouault and},
+  Biburl                   = {http://www.bibsonomy.org/bibtex/28f424041c089472a382577b5239f190a/msn},
+  Description              = {http://www.sciences.univ-nantes.fr/lina/atl/bibliography/OOPSLA2004Bezivin/bibliography_entry_view},
+  Interhash                = {520eefed41ac9bea19e4b714f7ae37b8},
+  Intrahash                = {8f424041c089472a382577b5239f190a},
+  Keywords                 = {cites.ref state.unclassified},
+  Timestamp                = {2009-06-25T15:59:19.000+0200},
+  Url                      = {http://www.sciences.univ-nantes.fr/lina/atl/www/papers/OOPSLA04/bezivin-megamodel.pdf}
+}
+
+@Article{Badreddin2012_Thesis,
+  Title                    = {{A Manifestation of Model-Code Duality: Facilitating the Representation of State Machines in the Umple Model-Oriented Programming Language}},
+  Author                   = {Badreddin, O},
+  Year                     = {2012},
+
+  Keywords                 = {Umple},
+  Mendeley-tags            = {Umple},
+  Url                      = {http://www.citeulike.org/group/18117/article/12461309}
+}
+
+@Article{UmpleAttributes,
+  Title                    = {{Exploring a Model-Oriented and Executable Syntax for UML Attributes}},
+  Author                   = {Badreddin, Omar and Forward, Andrew and Lethbridge, TimothyC.},
+  Journal                  = {Software Engineering Research, Management and Applications SE - 3},
+  Year                     = {2014},
+  Pages                    = {33--53},
+  Volume                   = {496},
+
+  Editor                   = {Lee, Roger},
+  Keywords                 = {Attributes,Code Generation,Model Driven Design,Model-Oriented Programming Language,UML,Umple},
+  Publisher                = {Springer International Publishing},
+  Series                   = {Studies in Computational Intelligence}
+}
+
+@InProceedings{UmpleAssociations,
+  Title                    = {{Improving Code Generation for Associations: Enforcing Multiplicity Constraints and Ensuring Referential Integrity}},
+  Author                   = {Badreddin, O and Forward, A and Lethbridge, T.C.},
+  Booktitle                = {SERA 2013},
+  Year                     = {2013},
+  Pages                    = {129--149},
+  Publisher                = {Springer},
+
+  Doi                      = {10.1007/978-3-319-00948-3\_9},
+  Url                      = {http://dx.doi.org/10.1007/978-3-319-00948-3\_9 http://link.springer.com/chapter/10.1007/978-3-319-00948-3\_9}
+}
+
+@InProceedings{umpleTesting2014,
+  Title                    = {A test-driven approach for developing software languages},
+  Author                   = {Badreddin, Omar and Forward, Andrew and Lethbridge, Timothy C.},
+  Booktitle                = {Model-Driven Engineering and Software Development (MODELSWARD), 2014 2nd International Conference on},
+  Year                     = {2014},
+  Month                    = {Jan},
+  Pages                    = {225-234},
+
+  Keywords                 = {Generators;Java;Semantics;Software;Syntactics;Testing;Unified modeling language;Model Oriented Programming Language;Test Driven Development;UML}
+}
+
+@InProceedings{Badreddin2014EnhancedComposites,
+  Title                    = {{Enhanced Code Generation from UML Composite State Machines}},
+  Author                   = {Badreddin, Omar and Lethbridge, Timothy C and Forward, Andrew and Elasaar, Maged and Aljamaan, Hamoud},
+  Booktitle                = {Modelsward 2014 - Proceedings of the 2nd International Conference on Model-Driven Engineering and Software Development},
+  Year                     = {2014},
+  Pages                    = {235--245},
+
+  Abstract                 = {UML modelling tools provide poor support for composite state machine code generation. Generated code is typically complex and large, especially for composite state machines. Existing approaches either do not handle this case at all or handle it by flattening the composite state machine into a simple one with a combi- natorial explosion of states, and excessive generated code. This paper presents a new approach that trans- forms a composite state machine into an equivalent set of simple state machines before code generation. This avoids the combinatorial explosion and leads to more concise and scalable generated code. We imple- ment our approach in Umple. We report on a case study, comparing our approach to others in terms of code size and scalability.}
+}
+
+@InProceedings{Balanyi2003,
+  Title                    = {Mining design patterns from C++ source code},
+  Author                   = {Balanyi, Z. and Ferenc, R.},
+  Booktitle                = {Software Maintenance, 2003. ICSM 2003. Proceedings. International Conference on},
+  Year                     = {2003},
+  Month                    = {Sept},
+  Pages                    = {305-314},
+
+  Doi                      = {10.1109/ICSM.2003.1235436},
+  ISSN                     = {1063-6773},
+  Keywords                 = {C++ language;XML;reverse engineering;software architecture;specification languages;ASG;C++ language;Columbus Schema;DPML;Design Pattern Markup Language;UML;Unified Modeling Language;XML-based language;abstract semantic graph;call delegation;design pattern mining;formal specification;micro architectures;object creation;open-source systems;operation overriding;source code;structural information;Artificial intelligence;Design methodology;Markup languages;Open source software;Pattern recognition;Robustness;Software measurement;Software systems;System testing;Unified modeling language}
+}
+
+@InProceedings{Barowski,
+  Title                    = {{Extraction and use of class dependency information for Java}},
+  Author                   = {Barowski, L A and II, J H Cross},
+  Booktitle                = {Reverse Engineering, 2002. Proceedings. Ninth Working Conference on},
+  Year                     = {2002},
+  Pages                    = {309--315},
+
+  ISBN                     = {1095-1350},
+  Keywords                 = {Java; inheritance; object-oriented programming; sp}
+}
+
+@Article{biehl2010literature,
+  Title                    = {Literature study on model transformations},
+  Author                   = {Biehl, Matthias},
+  Journal                  = {Royal Institute of Technology, Tech. Rep. ISRN/KTH/MMK},
+  Year                     = {2010}
+}
+
+@Misc{atmsystem,
+  Title                    = {{Java ATM System}},
+
+  Author                   = {Bjork, Russell},
+
+  Url                      = {http://www.cs.gordon.edu/courses/cs211/ATMExample/index.html},
+  Urldate                  = {2014-01-01}
+}
+
+@Misc{UmplificationBasicExampleURL,
+  Title                    = {{Java ATM System}},
+
+  Author                   = {Bjork, Russell},
+
+  Url                      = {http://www.site.uottawa.ca/~mgarz042/thesis/ATM/src},
+  Urldate                  = {2014-01-01}
+}
+
+@InProceedings{4023971,
+  Title                    = {The Experimental Paradigm in Reverse Engineering: Role, Challenges, and Limitations},
+  Author                   = {Briand, L.C.},
+  Booktitle                = {Reverse Engineering, 2006. WCRE '06. 13th Working Conference on},
+  Year                     = {2006},
+  Month                    = {Oct},
+  Pages                    = {3-8},
+
+  Doi                      = {10.1109/WCRE.2006.53},
+  ISSN                     = {1095-1350},
+  Keywords                 = {reverse engineering;software engineering;heuristics;reverse engineering;software engineering;Algorithm design and analysis;Humans;Information analysis;Laboratories;Maintenance engineering;Pattern analysis;Reverse engineering;Scalability;Software engineering;Software quality}
+}
+
+@Book{Drools_Book,
+  Title                    = {{JBoss Drools Business Rules}},
+  Author                   = {Browne, Paul},
+  Publisher                = {Packt Publishing},
+  Year                     = {2009},
+  Month                    = apr,
+
+  ISBN                     = {1847196063, 9781847196064},
+  Keywords                 = {DROOLS},
+  Mendeley-tags            = {DROOLS},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1611309}
+}
+
+@InProceedings{ModiscoMain,
+  Title                    = {MoDisco: A Generic and Extensible Framework for Model Driven Reverse Engineering},
+  Author                   = {Bruneliere, Hugo and Cabot, Jordi and Jouault, Fr{\'e}d{\'e}ric and Madiot, Fr{\'e}d{\'e}ric},
+  Booktitle                = {Proceedings of the IEEE/ACM International Conference on Automated Software Engineering},
+  Year                     = {2010},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {173--174},
+  Publisher                = {ACM},
+  Series                   = {ASE '10},
+
+  Acmid                    = {1859032},
+  Doi                      = {10.1145/1858996.1859032},
+  ISBN                     = {978-1-4503-0116-9},
+  Keywords                 = {eclipse platform, extensibility, genericity, model driven engineering, open source, reverse engineering},
+  Location                 = {Antwerp, Belgium},
+  Numpages                 = {2},
+  Url                      = {http://doi.acm.org/10.1145/1858996.1859032}
+}
+
+@InProceedings{MetricsBuse,
+  Title                    = {{A metric for software readability}},
+  Author                   = {Buse, Raymond P.L. and Weimer, Westley R.},
+  Booktitle                = {Proceedings of the 2008 international symposium on Software testing and analysis - ISSTA '08},
+  Year                     = {2008},
+
+  Address                  = {New York, New York, USA},
+  Month                    = jul,
+  Pages                    = {121},
+  Publisher                = {ACM Press},
+
+  Doi                      = {10.1145/1390630.1390647},
+  ISBN                     = {9781605580500},
+  Keywords                 = {FindBugs,METRICS,code metrics,machine learning,program understanding,software maintenance,software readability},
+  Mendeley-tags            = {METRICS},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1390630.1390647}
+}
+
+@InProceedings{CanforaHarman2007,
+  Title                    = {{New Frontiers of Reverse Engineering}},
+  Author                   = {CanforaHarman, Gerardo and {Di Penta}, Massimiliano},
+  Booktitle                = {Future of Software Engineering (FOSE '07)},
+  Year                     = {2007},
+  Month                    = may,
+  Pages                    = {326--341},
+  Publisher                = {IEEE},
+
+  Doi                      = {10.1109/FOSE.2007.15},
+  ISBN                     = {0-7695-2829-5},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1253532.1254728}
+}
+
+@InProceedings{recoveringconcepts,
+  Title                    = {Recovering Concepts from Source Code with Automated Concept Identification},
+  Author                   = {Maurice M. Carey and Gerald C. Gannod},
+  Booktitle                = {Proc. 15th IEEE Intâ€™l Conf. Program Comprehension},
+  Year                     = {2007}
+}
+
+@Article{LOCMetric,
+  Title                    = {Evaluation of Object-oriented Spatial Complexity Measures},
+  Author                   = {Chhabra, Jitender Kumar and Gupta, Varun},
+  Journal                  = {SIGSOFT Softw. Eng. Notes},
+  Year                     = {2009},
+
+  Month                    = may,
+  Number                   = {3},
+  Pages                    = {1--5},
+  Volume                   = {34},
+
+  Acmid                    = {1527208},
+  Address                  = {New York, NY, USA},
+  Doi                      = {10.1145/1527202.1527208},
+  ISSN                     = {0163-5948},
+  Issue_date               = {May 2009},
+  Keywords                 = {object-oriented software, software complexity, software engineering, software metrics, spatial complexity measures},
+  Numpages                 = {5},
+  Publisher                = {ACM},
+  Url                      = {http://doi.acm.org/10.1145/1527202.1527208}
+}
+
+@Article{Chikofsky,
+  Title                    = {{Reverse Engineering and Design Recovery: A Taxonomy}},
+  Author                   = {Chikofsky, Elliot J and II, James H Cross},
+  Journal                  = {IEEE Softw.},
+  Year                     = {1990},
+
+  Month                    = jan,
+  Number                   = {1},
+  Pages                    = {13--17},
+  Volume                   = {7},
+
+  ISBN                     = {0740-7459},
+  Keywords                 = {computer-aided software engineering; design recove},
+  Url                      = {http://dx.doi.org/10.1109/52.43044}
+}
+
+@Misc{jbrtsvn,
+  Title                    = {{Java Bug Reporting Tool}},
+
+  Author                   = {{cipov. P}},
+
+  Url                      = {https://code.google.com/p/jbrt/},
+  Urldate                  = {2015-02-01}
+}
+
+@Article{Cordy2006,
+  Title                    = {{The TXL source transformation language}},
+  Author                   = {Cordy, James R.},
+  Journal                  = {Science of Computer Programming},
+  Year                     = {2006},
+
+  Month                    = aug,
+  Number                   = {3},
+  Pages                    = {190--210},
+  Volume                   = {61},
+
+  HowPublished             = {http://dl.acm.org/citation.cfm?id=1149670.1149672},
+  ISSN                     = {01676423},
+  Keywords                 = {functional programming,grammars,source transformation,term rewriting},
+  Publisher                = {Elsevier North-Holland, Inc.}
+}
+
+@Article{DynamicSurvey,
+  Title                    = {A Systematic Survey of Program Comprehension through Dynamic Analysis},
+  Author                   = {Cornelissen, B. and Zaidman, A. and van Deursen, A. and Moonen, L. and Koschke, R.},
+  Journal                  = {Software Engineering, IEEE Transactions on},
+  Year                     = {2009},
+
+  Month                    = {Sept},
+  Number                   = {5},
+  Pages                    = {684-702},
+  Volume                   = {35},
+
+  Doi                      = {10.1109/TSE.2009.28},
+  ISSN                     = {0098-5589},
+  Keywords                 = {reverse engineering;software maintenance;system monitoring;dynamic analysis;program comprehension;software maintenance;systematic literature survey;Survey;dynamic analysis.;program comprehension}
+}
+
+@InProceedings{Couto2012,
+  Title                    = {A Patterns Based Reverse Engineering Approach for Java Source Code},
+  Author                   = {Couto, Rui and Ribeiro, Antonio Nestor and Campos, Jose Creissac},
+  Booktitle                = {Software Engineering Workshop (SEW), 2012 35th Annual IEEE},
+  Year                     = {2012},
+  Month                    = {Oct},
+  Pages                    = {140-147},
+
+  Doi                      = {10.1109/SEW.2012.21},
+  ISSN                     = {1550-6215},
+  Keywords                 = {Analytical models;Computational modeling;Data mining;Java;Knowledge based systems;Software;Unified modeling language}
+}
+
+@Misc{MappingRulesRepository,
+  Title                    = {{Mapping Rules in Umple code repository}},
+
+  Author                   = {CRuiSE},
+  HowPublished             = {http://goo.gl/DFGkZB},
+
+  Urldate                  = {2014-01-01}
+}
+
+@Misc{UmpleAPI,
+  Title                    = {{Umple API summary}},
+
+  Author                   = {CRuiSE},
+  HowPublished             = {http://api.umple.org},
+
+  Urldate                  = {2014-01-01}
+}
+
+@Misc{umpleexamples,
+  Title                    = {{Umple Examples}},
+
+  Author                   = {CRuiSE},
+
+  Url                      = {https://code.google.com/p/umple/wiki/Examples},
+  Urldate                  = {2014-01-01}
+}
+
+@Misc{UmpleIssues,
+  Title                    = {{Umple Defect Tracking List}},
+
+  Author                   = {CRuiSE},
+  HowPublished             = {https://code.google.com/p/umple/issues/list},
+
+  Urldate                  = {2015-01-01}
+}
+
+@Misc{UmpleMetamodel,
+  Title                    = {{Umple metamodel}},
+
+  Author                   = {CRuiSE},
+  HowPublished             = {http://metamodel.umple.org},
+
+  Urldate                  = {2014-01-01}
+}
+
+@Misc{UmpleOnline,
+  Title                    = {{Umple online}},
+
+  Author                   = {CRuiSE},
+  HowPublished             = {http://try.umple.org},
+
+  Urldate                  = {2014-01-01},
+  Volume                   = {2013}
+}
+
+@Misc{umpleRepository,
+  Title                    = {{Umple Source Code Repository}},
+
+  Author                   = {CRuiSE},
+
+  Url                      = {https://github.com/umple/Umple/},
+  Urldate                  = {2015-01-01}
+}
+
+@Article{Czarnecki2006,
+  Title                    = {Feature-based Survey of Model Transformation Approaches},
+  Author                   = {Czarnecki, K. and Helsen, S.},
+  Journal                  = {IBM Syst. J.},
+  Year                     = {2006},
+
+  Month                    = jul,
+  Number                   = {3},
+  Pages                    = {621--645},
+  Volume                   = {45},
+
+  Acmid                    = {1165106},
+  Address                  = {Riverton, NJ, USA},
+  Doi                      = {10.1147/sj.453.0621},
+  ISSN                     = {0018-8670},
+  Issue_date               = {July 2006},
+  Numpages                 = {25},
+  Publisher                = {IBM Corp.},
+  Url                      = {http://dx.doi.org/10.1147/sj.453.0621}
+}
+
+@InProceedings{Delamare06,
+  Title                    = {Reverse-engineering of UML 2.0 Sequence Diagrams from Execution Traces},
+  Author                   = {Romain Delamare and Benoit Baudry},
+  Booktitle                = {in Workshop on Object-Oriented Reengineering at ECOOP06},
+  Year                     = {2006}
+}
+
+@InProceedings{Lucca2000,
+  Title                    = {Recovering class diagrams from data-intensive legacy systems},
+  Author                   = {Di Lucca, G.A. and Fasolino, A.R. and De Carlini, U.},
+  Booktitle                = {Software Maintenance, 2000. Proceedings. International Conference on},
+  Year                     = {2000},
+  Pages                    = {52-63},
+
+  Doi                      = {10.1109/ICSM.2000.883005},
+  ISSN                     = {1063-6773},
+  Keywords                 = {data handling;object-oriented programming;persistent objects;reverse engineering;software maintenance;system recovery;COBOL medium-sized system;OO model;class diagram;class diagram recovery;data-intensive legacy systems;heuristic criteria;object oriented model;object recovery;persistent data stores;procedural code;reverse engineering;reverse engineering methods;Software maintenance}
+}
+
+@InProceedings{reteDROOLS,
+  Title                    = {{Improving Rete algorithm to enhance performance of rule engine systems}},
+  Author                   = {{Ding Xiao} and {Xiaoan Zhong}},
+  Booktitle                = {2010 International Conference On Computer Design and Applications},
+  Year                     = {2010},
+  Month                    = jun,
+  Pages                    = {V3--572--V3--575},
+  Publisher                = {IEEE},
+  Volume                   = {3},
+
+  Abstract                 = {Rete algorithm is the most efficient forward inference algorithm, widely used in rule engine systems. This paper describes in detail that the realization of improvement for Rete algorithm applied in rule engine systems such as Telecom Billing System in two ways-Alpha-Node-Hashing which specifies how to find Alpha Nodes in the Alpha Memory by hashing, and Beta-Node-Indexing which mainly describes in creating index for Beta Nodes in the Beta Memory to speed searching. Then a series of experiments were made to verify the results. The results show that these two methods significantly improve system performance, and effectively make up for deficiencies in performance bottleneck of processing efficiency in telecom billing system.},
+  Doi                      = {10.1109/ICCDA.2010.5541368},
+  ISBN                     = {978-1-4244-7164-5},
+  Keywords                 = {Alpha-Node-Hashing,Beta-Node-Indexing,Computer science,Engines,Inference algorithms,Laboratories,Multimedia systems,Pattern matching,RETE,Rete Algorithm,Software algorithms,Software performance,System Performance,Telecommunications,alpha memory,beta memory,beta nodes,forward inference algorithm,inference mechanisms,invoicing,rule engine systems,speed searching,telecom billing system,telecommunication industry},
+  Mendeley-tags            = {RETE},
+  Shorttitle               = {Computer Design and Applications (ICCDA), 2010 Int},
+  Url                      = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5541368}
+}
+
+@InCollection{Huzar2011,
+  Title                    = {Mining Design Patterns from Existing Projects Using Static and Run-Time Analysis},
+  Author                   = {DobiÅ¡, Michal and MajtÃ¡s, Lâ€™ubomÃ­r},
+  Booktitle                = {Software Engineering Techniques},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2011},
+  Editor                   = {Huzar, Zbigniew and Koci, Radek and Meyer, Bertrand and Walter, Bartosz and Zendulka, Jaroslav},
+  Pages                    = {62-75},
+  Series                   = {Lecture Notes in Computer Science},
+  Volume                   = {4980},
+
+  Doi                      = {10.1007/978-3-642-22386-0_5},
+  ISBN                     = {978-3-642-22385-3},
+  Keywords                 = {Design patterns; reverse engineering},
+  Language                 = {English},
+  Url                      = {http://dx.doi.org/10.1007/978-3-642-22386-0_5}
+}
+
+@Misc{astnodeapi,
+  Title                    = {{ASTNode API}},
+
+  Author                   = {Eclipse Documentation},
+
+  Url                      = {http://goo.gl/yLt2CF},
+  Urldate                  = {2014-01-01}
+}
+
+@Misc{Eclipse,
+  Title                    = {{MoDisco}},
+
+  Author                   = {Eclipse},
+  HowPublished             = {http://www.eclipse.org/gmt/modisco/},
+
+  Urldate                  = {2014-01-01}
+}
+
+@Misc{jdtProject,
+  Title                    = {{Eclipse Java development tools (JDT)}},
+
+  Author                   = {Eclipse},
+
+  Url                      = {http://projects.eclipse.org/projects/eclipse.jdt},
+  Urldate                  = {2014-01-01},
+  Volume                   = {2013}
+}
+
+@InProceedings{Forward2008,
+  Title                    = {{Problems and opportunities for model-centric versus code-centric software development}},
+  Author                   = {Forward, Andrew and Lethbridge, Timothy C.},
+  Booktitle                = {Proceedings of the 2008 international workshop on Models in software engineering - MiSE '08},
+  Year                     = {2008},
+
+  Address                  = {New York, New York, USA},
+  Month                    = may,
+  Pages                    = {27},
+  Publisher                = {ACM Press},
+
+  Doi                      = {10.1145/1370731.1370738},
+  ISBN                     = {9781605580258},
+  Keywords                 = {attitudes,empirical study,questionnaire,software modeling,software practitioners,survey},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1370731.1370738}
+}
+
+@Article{UmpleMAIN,
+  Title                    = {{Improving program comprehension by enhancing program constructs: An analysis of the Umple language}},
+  Author                   = {Forward, A and Lethbridge, T C and Brestovansky, D},
+  Journal                  = {2009 IEEE 17th International Conference on Program Comprehension},
+  Year                     = {2009},
+  Pages                    = {311--312},
+
+  Abstract                 = {Umple is a set of extensions to object-oriented languages that provides a concrete syntax for UML abstractions like associations. We argue that Umple will help increase program comprehension by allowing developers to describe a system at a more abstract level, and by reducing the volume of code.},
+  Editor                   = {Koschke, Rainer and Marcus, Adrian},
+  ISSN                     = {10636897},
+  Keywords                 = {[electronic manuscript]},
+  Publisher                = {Ieee}
+}
+
+@Misc{jflsvn,
+  Title                    = {{Java Financial Library}},
+
+  Author                   = {{Freshmeat}},
+
+  Url                      = {http://freecode.com/projects/jfl/},
+  Urldate                  = {2015-02-01}
+}
+
+@Misc{Fujaba,
+  Title                    = {{Reclipse - Fujaba CASE tool}},
+
+  Author                   = {Fujaba},
+  HowPublished             = {https://code.google.com/p/reclipse-emf/},
+
+  Urldate                  = {2015-01-01}
+}
+
+@Misc{jhotdraw,
+  Title                    = {{JHotDraw}},
+
+  Author                   = {Gamma, Erich and Eggenschwiler, Thomas},
+  HowPublished             = {http://www.jhotdraw.org/},
+
+  Urldate                  = {2014-01-01},
+  Volume                   = {2013}
+}
+
+@Book{gamma1994design,
+  Title                    = {Design Patterns: Elements of Reusable Object-Oriented Software},
+  Author                   = {Gamma, E. and Helm, R. and Johnson, R. and Vlissides, J.},
+  Publisher                = {Pearson Education},
+  Year                     = {1994},
+
+  ISBN                     = {9780321700698},
+  Url                      = {http://books.google.ca/books?id=6oHuKQe3TjQC}
+}
+
+@InProceedings{UmpleFrameworkSANER15p494,
+  Title                    = {Umple: A Framework for Model Driven Development of Object-Oriented Systems},
+  Author                   = {Miguel A. GarzÃ³n and Hamoud Aljamaan and Timothy C. Lethbridge},
+  Booktitle                = {Proc.\ SANER},
+  Year                     = {2015},
+  Pages                    = {494--498},
+  Publisher                = {IEEE}
+}
+
+@InProceedings{UmplificationCascon,
+  Title                    = {Reverse Engineering of Object-Oriented Code into Umple using an Incremental and Rule-Based Approach},
+  Author                   = {GarzÃ³n, Miguel A. and Lethbridge, Timothy C. and Aljamaan, Hamoud and Badreddin, Omar},
+  Booktitle                = {Proceedings of the 2014 Conference of the Center for Advanced Studies on Collaborative Research},
+  Year                     = {2014},
+
+  Address                  = {Riverton, NJ, USA},
+  Pages                    = {91--105},
+  Publisher                = {IBM Corp.},
+  Series                   = {CASCON '14},
+
+  Location                 = {Toronto, Ontario, Canada},
+  Numpages                 = {14}
+}
+
+@InProceedings{DoctoralSymposiumWCRE,
+  Title                    = {Exploring How to Develop Transformations and Tools for Automated Umplification},
+  Author                   = {Garzon, M. and Lethbridge, T.C.},
+  Booktitle                = {Reverse Engineering (WCRE), 2012 19th Working Conference on},
+  Year                     = {2012},
+  Month                    = {Oct},
+  Pages                    = {491-494},
+
+  Doi                      = {10.1109/WCRE.2012.58},
+  ISSN                     = {1095-1350},
+  Keywords                 = {Java;programming languages;reverse engineering;Java;Umple;Umplification;automated umplification;legacy code;programming language code;reverse engineering;textual representation;Java;Prototypes;Reverse engineering;Semantics;Transforms;Unified modeling language;Incremental Reverse Engineering;Textual Modeling;Umple}
+}
+
+@InProceedings{grant2011reverse,
+  Title                    = {Reverse engineering co-maintenance relationships using conceptual analysis of source code},
+  Author                   = {Grant, Scott and Cordy, James R and Skillicorn, David B},
+  Booktitle                = {Reverse Engineering (WCRE), 2011 18th Working Conference on},
+  Year                     = {2011},
+  Organization             = {IEEE},
+  Pages                    = {87--91}
+}
+
+@Misc{xmispec,
+  Title                    = {{XML Metadata Interchange (XMI)}},
+
+  Author                   = {Object Management Group},
+
+  Url                      = {http://www.omg.org/spec/XMI/},
+  Urldate                  = {2014-01-01}
+}
+
+@Electronic{UMLSpec,
+  Title                    = {{UML Specification, Version 2.0}},
+  Author                   = {Group, O. M. G.},
+
+  Citeulike-article-id     = {709834},
+  Institution              = {OMG},
+  Posted-at                = {2006-06-25 00:34:57},
+  Priority                 = {0}
+}
+
+@InProceedings{GueheneucSystematic,
+  Title                    = {{A systematic study of UML class diagram constituents for their abstract and precise recovery}},
+  Author                   = {GueÌ�heÌ�neuc, Y},
+  Booktitle                = {Software Engineering Conference, 2004. 11th Asia-Pacific},
+  Year                     = {2004},
+  Pages                    = {265--274},
+
+  ISBN                     = {1530-1362},
+  Keywords                 = {C++ language; Java; Smalltalk; Unified Modeling La}
+}
+
+@InProceedings{RefWorks:1117,
+  Title                    = {{Abstract and precise recovery of UML class diagram constituents}},
+  Author                   = {GueÌ�heÌ�neuc, Y},
+  Booktitle                = {Software Maintenance, 2004. Proceedings. 20th IEEE International Conference on},
+  Year                     = {2004},
+  Pages                    = {523},
+
+  ISBN                     = {1063-6773},
+  Keywords                 = {C++ language; Java; Smalltalk; Unified Modeling La}
+}
+
+@Article{Weka,
+  Title                    = {{The WEKA data mining software}},
+  Author                   = {Hall, Mark and Frank, Eibe and Holmes, Geoffrey and Pfahringer, Bernhard and Reutemann, Peter and Witten, Ian H.},
+  Journal                  = {ACM SIGKDD Explorations Newsletter},
+  Year                     = {2009},
+
+  Month                    = nov,
+  Number                   = {1},
+  Pages                    = {10},
+  Volume                   = {11},
+
+  ISSN                     = {19310145},
+  Keywords                 = {Weka Ref},
+  Mendeley-tags            = {Weka Ref},
+  Publisher                = {ACM},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1656274.1656278}
+}
+
+@InProceedings{6754280,
+  Title                    = {Java Source Code Static Check Eclipse Plug-In Based on Common Design Pattern},
+  Author                   = {Zhang Haotian and Liu Shu},
+  Booktitle                = {Software Engineering (WCSE), 2013 Fourth World Congress on},
+  Year                     = {2013},
+  Month                    = {Dec},
+  Pages                    = {165-170},
+
+  Doi                      = {10.1109/WCSE.2013.30},
+  Keywords                 = {Java;object-oriented programming;program diagnostics;reverse engineering;software reusability;source code (software);BCEL;GoF design patterns;Java applications;Java byte code;Java developers;Java source code static check Eclipse plug-in;Java source code static checking tool;abstract syntax tree representation;code fragments;collaboration information;derivative design pattern;design pattern detection;dynamic behavior;fact extraction;reusable object-oriented software design;software develop;software reverse engineering;software system;static analysis;static definitions;Calculus;Computer architecture;Java;Pattern matching;Software systems;Unified modeling language;BCEL;Eclipse Plug-in;design pattern}
+}
+
+@InProceedings{960600,
+  Title                    = {JBOORET: an automated tool to recover OO design and source models},
+  Author                   = {Hong, M. and Tao Xie and Fuqing Yang},
+  Booktitle                = {Computer Software and Applications Conference, 2001. COMPSAC 2001. 25th Annual International},
+  Year                     = {2001},
+  Pages                    = {71-76},
+
+  Doi                      = {10.1109/CMPSAC.2001.960600},
+  ISSN                     = {0730-3157},
+  Keywords                 = {knowledge representation;object-oriented methods;reverse engineering;user interfaces;JBOORET;Jade Bird Object-Oriented Reverse Engineering Tool;OO design recovery;OO source model recovery;automated tool;flexible user interface;knowledge representation;multiperspective design;parser;Application software;Birds;Computer industry;Computer science;Data mining;Object oriented modeling;Reverse engineering;Software maintenance;Software systems;Software tools}
+}
+
+@InProceedings{5429859,
+  Title                    = {Reverse engineering as a means of improving and adapting legacy finite element code},
+  Author                   = {Hoole, S.R.H. and Arudchelvam, T.},
+  Booktitle                = {Industrial and Information Systems (ICIIS), 2009 International Conference on},
+  Year                     = {2009},
+  Month                    = {Dec},
+  Pages                    = {227-232},
+
+  Doi                      = {10.1109/ICIINFS.2009.5429859},
+  Keywords                 = {Java;Unified Modeling Language;finite element analysis;object-oriented programming;reverse engineering;software maintenance;Java;UML design;autonomous agents;finite elements-based field computation;legacy code;object-oriented code;reverse engineering;software lifecycle;Autonomous agents;Encapsulation;Finite element methods;Java;Life testing;Reverse engineering;Sequential analysis;Software design;Software maintenance;Software testing;Class and Sequence Diagrams;FORTRAN;Finite Elements;Java;Legacy Software;Reengineering;Reverse Engineering;UML}
+}
+
+@InProceedings{RefWorks:1186,
+  Title                    = {{A rule-based tool for reverse engineering from source code to graphical models}},
+  Author                   = {Huang, Hai and Sugihara, Kazuo and Miyamoto, Isao},
+  Booktitle                = {Software Engineering and Knowledge Engineering, 1992. Proceedings., Fourth International Conference on},
+  Year                     = {1992},
+  Pages                    = {178--185},
+  Publisher                = {IEEE}
+}
+
+@Misc{IBM,
+  Title                    = {{Rational Software Architect}},
+
+  Author                   = {IBM},
+
+  Url                      = {http://www.ibm.com/developerworks/rational/products/rsa/}
+}
+
+@Misc{ROSE,
+  Title                    = {{Rational Software Modeler 7.1}},
+
+  Author                   = {{IBM}},
+
+  Url                      = {http://www-01.ibm.com/software/awdtools/modeler/swmodeler/},
+  Urldate                  = {2015-01-01}
+}
+
+@InProceedings{6385126,
+  Title                    = {A Rule-based Automated Approach for Extracting Models from Source Code},
+  Author                   = {Ichii, M. and Myojin, T. and Nakagawa, Y. and Chikahisa, M. and Ogawa, H.},
+  Booktitle                = {Reverse Engineering (WCRE), 2012 19th Working Conference on},
+  Year                     = {2012},
+  Month                    = {Oct},
+  Pages                    = {308-317},
+
+  Doi                      = {10.1109/WCRE.2012.40},
+  ISSN                     = {1095-1350},
+  Keywords                 = {formal verification;knowledge based systems;software fault tolerance;C source code;MDE;MOF;POM model extraction framework;POM-MC;Promela models;SPIN model checker;industrial software system;meta-object facility model transformation technology;model abstraction;model driven engineering;program-oriented modeling;rule-based abstraction;rule-based automated approach;software fault analysis;software model extraction;Abstracts;Analytical models;Libraries;Software;Syntactics;Unified modeling language;Eclipse Modeling Framework (EMF);Meta Object Facility (MOF);Model Checking;Model Driven Engineering (MDE);Query/View/Transformation (QVT);Source Code Analysis}
+}
+
+@InProceedings{kermetaMain,
+  Title                    = {Model Driven Language Engineering with Kermeta},
+  Author                   = {J{\'e}z{\'e}quel, Jean-Marc and Barais, Olivier and Fleurey, Franck},
+  Booktitle                = {Proceedings of the 3rd International Summer School Conference on Generative and Transformational Techniques in Software Engineering III},
+  Year                     = {2011},
+
+  Address                  = {Berlin, Heidelberg},
+  Pages                    = {201--221},
+  Publisher                = {Springer-Verlag},
+  Series                   = {GTTSE'09},
+
+  Acmid                    = {1949931},
+  ISBN                     = {3-642-18022-1, 978-3-642-18022-4},
+  Location                 = {Braga, Portugal},
+  Numpages                 = {21},
+  Url                      = {http://dl.acm.org/citation.cfm?id=1949925.1949931}
+}
+
+@Article{RulebasedSystems,
+  Title                    = {A software engineering methodology for rule-based systems},
+  Author                   = {Jacob, R.J.K. and Froscher, J.N.},
+  Journal                  = {Knowledge and Data Engineering, IEEE Transactions on},
+  Year                     = {1990},
+
+  Month                    = {Jun},
+  Number                   = {2},
+  Pages                    = {173-189},
+  Volume                   = {2},
+
+  Doi                      = {10.1109/69.54718},
+  ISSN                     = {1041-4347},
+  Keywords                 = {knowledge based systems;software engineering;connectivity;expert systems;facts;information hiding;knowledge base;knowledge maintenance;maintainable rule-based expert systems;notation set;rule-based systems;rules;software engineering methodology;Design engineering;Educational institutions;Expert systems;Information analysis;Knowledge based systems;Knowledge engineering;Production systems;Software algorithms;Software engineering;Software tools}
+}
+
+@Misc{IdeaTool,
+  Title                    = {{IntelliJ IDEA 14.1.1}},
+
+  Author                   = {JetBrains},
+
+  Url                      = {https://www.jetbrains.com/idea/help/intellij-idea.html},
+  Urldate                  = {2015-01-01}
+}
+
+@Article{atl,
+  Title                    = {{ATL: A model transformation tool}},
+  Author                   = {Jouault, Fr\'{e}d\'{e}ric and Allilaire, Freddy and B\'{e}zivin, Jean and Kurtev, Ivan},
+  Journal                  = {Sci.Comput.Program.},
+  Year                     = {2008},
+
+  Month                    = jun,
+  Number                   = {1-2},
+  Pages                    = {31--39},
+  Volume                   = {72},
+
+  ISBN                     = {0167-6423},
+  Keywords                 = {M2M (model-to-model transformation); Model enginee},
+  Url                      = {http://dx.doi.org/10.1016/j.scico.2007.08.002}
+}
+
+@Article{Jouault200831,
+  Title                    = {ATL: A model transformation tool },
+  Author                   = {FrÃ©dÃ©ric Jouault and Freddy Allilaire and Jean BÃ©zivin and Ivan Kurtev},
+  Journal                  = {Science of Computer Programming },
+  Year                     = {2008},
+  Note                     = {Special Issue on Second issue of experimental software and toolkits (EST) },
+  Number                   = {1â€“2},
+  Pages                    = {31 - 39},
+  Volume                   = {72},
+
+  Doi                      = {http://dx.doi.org/10.1016/j.scico.2007.08.002},
+  ISSN                     = {0167-6423},
+  Keywords                 = {Model engineering},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0167642308000439}
+}
+
+@Article{Kang2007,
+  Title                    = {Reverse-engineering 1-n Associations from Java Bytecode Using Alias Analysis},
+  Author                   = {Kang, Yoohoon and Park, Chanjin and Wu, Chisu},
+  Journal                  = {Inf. Softw. Technol.},
+  Year                     = {2007},
+
+  Month                    = feb,
+  Number                   = {2},
+  Pages                    = {81--98},
+  Volume                   = {49},
+
+  Acmid                    = {1222411},
+  Address                  = {Newton, MA, USA},
+  Doi                      = {10.1016/j.infsof.2006.02.004},
+  ISSN                     = {0950-5849},
+  Issue_date               = {February, 2007},
+  Keywords                 = {Alias analysis, Class diagram, Program understanding, Reverse-engineering, Static program analysis, Type inference},
+  Numpages                 = {18},
+  Publisher                = {Butterworth-Heinemann},
+  Url                      = {http://dx.doi.org/10.1016/j.infsof.2006.02.004}
+}
+
+@Misc{args4jsvn,
+  Title                    = {{args4j}},
+
+  Author                   = {{Kawaguchi. K}},
+
+  Url                      = {https://github.com/kohsuke/args4j},
+  Urldate                  = {2015-02-01}
+}
+
+@InProceedings{Kelsen2004,
+  Title                    = {A simple static model for understanding the dynamic behavior of programs},
+  Author                   = {Kelsen, P.},
+  Booktitle                = {Program Comprehension, 2004. Proceedings. 12th IEEE International Workshop on},
+  Year                     = {2004},
+  Month                    = {June},
+  Pages                    = {46-51},
+
+  Doi                      = {10.1109/WPC.2004.1311046},
+  ISSN                     = {1092-8138},
+  Keywords                 = {Unified Modeling Language;program debugging;program slicing;reverse engineering;software maintenance;EOP-model;UML sequence diagrams;high-level debugging;program comprehension;program dynamic behavior;program slicing;program understanding;reverse engineering;software maintenance;statechart diagrams;Communications technology;Conferences;Data mining;Debugging;Educational programs;Reverse engineering;Runtime;Software maintenance;Unified modeling language;Visualization}
+}
+
+@InCollection{kiczalesAOP,
+  Title                    = {Aspect-oriented programming},
+  Author                   = {Kiczales, Gregor and Lamping, John and Mendhekar, Anurag and Maeda, Chris and Lopes, Cristina and Loingtier, Jean-Marc and Irwin, John},
+  Booktitle                = {ECOOP97 â€” Object-Oriented Programming},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {1997},
+  Editor                   = {AkSit, Mehmet and Matsuoka, Satoshi},
+  Pages                    = {220-242},
+  Series                   = {Lecture Notes in Computer Science},
+  Volume                   = {1241},
+
+  Doi                      = {10.1007/BFb0053381},
+  ISBN                     = {978-3-540-63089-0},
+  Language                 = {English},
+  Url                      = {http://dx.doi.org/10.1007/BFb0053381}
+}
+
+@Article{kitchenham2004procedures,
+  Title                    = {Procedures for performing systematic reviews},
+  Author                   = {Kitchenham, Barbara},
+  Journal                  = {Keele, UK, Keele University},
+  Year                     = {2004},
+  Number                   = {2004},
+  Pages                    = {1--26},
+  Volume                   = {33}
+}
+
+@InCollection{mccKleppe,
+  Title                    = {MCC: A Model Transformation Environment},
+  Author                   = {Kleppe, Anneke},
+  Booktitle                = {Model Driven Architecture â€“ Foundations and Applications},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2006},
+  Editor                   = {Rensink, Arend and Warmer, Jos},
+  Pages                    = {173-187},
+  Series                   = {Lecture Notes in Computer Science},
+  Volume                   = {4066},
+
+  Doi                      = {10.1007/11787044_14},
+  ISBN                     = {978-3-540-35909-8},
+  Keywords                 = {MDA; QVT; model driven development; model transformation; transformation taxonomy},
+  Language                 = {English},
+  Url                      = {http://dx.doi.org/10.1007/11787044_14}
+}
+
+@Article{kleppe2007language,
+  Title                    = {A language description is more than a metamodel},
+  Author                   = {Kleppe, Anneke G},
+  Year                     = {2007},
+
+  Publisher                = {megaplanet. org}
+}
+
+@InProceedings{Kollmann2001,
+  Title                    = {{Application of UML associations and their adornments in design recovery}},
+  Author                   = {Kollmann, R. and Gogolla, M.},
+  Booktitle                = {Proceedings Eighth Working Conference on Reverse Engineering},
+  Year                     = {2001},
+  Pages                    = {81--90},
+  Publisher                = {IEEE Comput. Soc},
+
+  Abstract                 = {Many CASE tools support reverse engineering and UML. However, it can be observed that, usually, only a subset of the UML notation is supported, namely those parts with a more or less direct code representation. Although a lot of research has been done in this field, the more advanced features of UML notations are not commonly supported in reverse engineering. In this paper, we show approaches to discover patterns in program code that can be represented by means of the advanced notational features of UML class diagrams. We obtain the necessary information by reverse-engineering Java programs with different methods. These have been implemented in a prototype implementation},
+  ISSN                     = {1095-1350},
+  Keywords                 = {Application software,CASE tools,Computer aided software engineering,Computer science,Handicapped aids,Java,Java programs,Marine vehicles,Prototypes,Reverse engineering,Software prototyping,UML associations,UML class diagrams,UML notations,Unified modeling language,adornment,composition,computer aided software engineering,diagrams,direct code representation,gogolla,prototype implementation,reverse engineering,software prototyping,specification languages,system design recovery},
+  Mendeley-tags            = {gogolla},
+  Shorttitle               = {Reverse Engineering, 2001. Proceedings. Eighth Wor},
+  Url                      = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=957812}
+}
+
+@InProceedings{kollmanToolsCurrent,
+  Title                    = {A study on the current state of the art in tool-supported UML-based static reverse engineering},
+  Author                   = {Kollmann, R. and Selonen, P. and Stroulia, E. and Systa, T. and Zundorf, A.},
+  Booktitle                = {Reverse Engineering, 2002. Proceedings. Ninth Working Conference on},
+  Year                     = {2002},
+  Pages                    = {22-32},
+
+  Doi                      = {10.1109/WCRE.2002.1173061},
+  ISSN                     = {1095-1350},
+  Keywords                 = {computer aided software engineering;reverse engineering;specification languages;CASE tools;Unified Modeling Language;object-oriented software systems;tool-supported UML-based static reverse engineering;Computer aided software engineering;Computer industry;Object oriented modeling;Prototypes;Reverse engineering;Software design;Software prototyping;Software standards;Software systems;Unified modeling language}
+}
+
+@InProceedings{ETLMain,
+  Title                    = {The Epsilon Transformation Language},
+  Author                   = {Kolovos, Dimitrios S. and Paige, Richard F. and Polack, Fiona A.},
+  Booktitle                = {Proceedings of the 1st International Conference on Theory and Practice of Model Transformations},
+  Year                     = {2008},
+
+  Address                  = {Berlin, Heidelberg},
+  Pages                    = {46--60},
+  Publisher                = {Springer-Verlag},
+  Series                   = {ICMT '08},
+
+  Acmid                    = {1424869},
+  Doi                      = {10.1007/978-3-540-69927-9_4},
+  ISBN                     = {978-3-540-69926-2},
+  Location                 = {Zurich, Switzerland},
+  Numpages                 = {15},
+  Url                      = {http://dx.doi.org/10.1007/978-3-540-69927-9_4}
+}
+
+@InProceedings{cpp2xmi,
+  Title                    = {CPP2XMI: Reverse Engineering of UML Class, Sequence, and Activity Diagrams from C++ Source Code},
+  Author                   = {Korshunova, E. and Petkovic, M. and van den Brand, M.G.J. and Mousavi, M.R.},
+  Booktitle                = {Reverse Engineering, 2006. WCRE'06. 13th Working Conference on},
+  Year                     = {2006},
+  Month                    = {Oct},
+  Pages                    = {297-298},
+
+  ISSN                     = {1095-1350}
+}
+
+@Misc{Hypodraw,
+  Title                    = {{HypoDraw}},
+
+  Author                   = {Kunz, P.},
+
+  Url                      = {http://www.slac.stanford.edu/grp/ek/hippodraw/},
+  Urldate                  = {2015-01-01}
+}
+
+@Misc{Kunz,
+  Title                    = {{HypoDraw}},
+
+  Author                   = {Kunz, Paul},
+
+  Url                      = {http://www.slac.stanford.edu/grp/ek/hippodraw/},
+  Urldate                  = {2014-01-01}
+}
+
+@Article{Lethbridge2010c,
+  Title                    = {{Umplification: Refactoring to Incrementally Add Abstraction to a Program}},
+  Author                   = {Lethbridge, T.C. and Forward, A. and Badreddin, O.},
+  Journal                  = {Reverse Engineering (WCRE), 2010 17th Working Conference on},
+  Year                     = {2010},
+
+  Abstract                 = {Umple adds UML abstractions to base programming languages such as Java, PHP and Ruby. The resulting program can be seen as both model and code at the same time. Umplification is the process of converting a base language program to Umple by a series of refactorings. The result is a program semantically equivalent to the original, but which can be rendered and edited as UML diagrams by a modeling tool or manipulated as a textual program for those who prefer. In this paper we discuss the principles of Umple, the process of umplification, and two examples including umplification of the Umple compiler itself.},
+  ISBN                     = {978-1-4244-8911-4},
+  ISSN                     = {1095-1350},
+  Keywords                 = {UML,Umple,modeling,refactoring}
+}
+
+@Article{teachingUmple,
+  Title                    = {{Teaching UML using umple: Applying model-oriented programming in the classroom}},
+  Author                   = {Lethbridge, Timothy C and Mussbacher, Gunter and Forward, Andrew and Badreddin, Omar},
+  Journal                  = {2011 24th IEEECS Conference on Software Engineering Education and Training CSEET},
+  Year                     = {2011},
+  Pages                    = {421--428},
+
+  Abstract                 = {We show how a technology called Umple can be used to improve teaching UML and modeling. Umple allows UML to be viewed both textually and graphically, with updates to one view reflected in the other. It allows UML concepts to be added to programming languages, plus web-based code generation from UML to those languages. We have used Umple in student laboratories and assignments for two years, and also live in the classroom. In a survey, students showed enthusiasm about Umple, and indicated they believe it helps them understand UML better. Improvements in their grades also support our approach.},
+  Institution              = {University of Ottawa, Canada},
+  ISSN                     = {10930175},
+  Publisher                = {IEEE}
+}
+
+@Article{QVTMain,
+  Title                    = {Model Querying with Graphical Notation of QVT Relations},
+  Author                   = {Li, Dan and Li, Xiaoshan and Stolz, Volker},
+  Journal                  = {SIGSOFT Softw. Eng. Notes},
+  Year                     = {2012},
+
+  Month                    = jul,
+  Number                   = {4},
+  Pages                    = {1--8},
+  Volume                   = {37},
+
+  Acmid                    = {2237808},
+  Address                  = {New York, NY, USA},
+  Doi                      = {10.1145/2237796.2237808},
+  ISSN                     = {0163-5948},
+  Issue_date               = {July 2012},
+  Keywords                 = {OCL, QVT, UML, XPath, graphical model querying},
+  Numpages                 = {8},
+  Publisher                = {ACM},
+  Url                      = {http://doi.acm.org/10.1145/2237796.2237808}
+}
+
+@InProceedings{HybridModelTransform,
+  Title                    = {A formalizing hybrid model transformation approach for collaborative system},
+  Author                   = {Kun Ma and Bo Yang and Haiyang Wang},
+  Booktitle                = {Computer Supported Cooperative Work in Design (CSCWD), 2010 14th International Conference on},
+  Year                     = {2010},
+  Month                    = {April},
+  Pages                    = {71-76},
+
+  Doi                      = {10.1109/CSCWD.2010.5472000},
+  Keywords                 = {Algebra;Authoring systems;Collaborative software;Collaborative work;Computer science;Information science;International collaboration;Mathematical model;Prototypes;Unified modeling language;Collaborative System;Model Driven Development;Model Transformation;Unified Modeling Language}
+}
+
+@Misc{javaspec,
+  Title                    = {{Java Metamodel}},
+
+  Author                   = {Eclipse Marketplace},
+
+  Url                      = {http://goo.gl/YV3p83},
+  Urldate                  = {2014-01-01}
+}
+
+@InProceedings{agileDev,
+  Title                    = {Agile Model Driven Development: An Intelligent Compromise},
+  Author                   = {Matinnejad, R.},
+  Booktitle                = {Software Engineering Research, Management and Applications (SERA), 2011 9th International Conference on},
+  Year                     = {2011},
+  Month                    = {Aug},
+  Pages                    = {197-202},
+
+  Doi                      = {10.1109/SERA.2011.17},
+  Keywords                 = {formal specification;software prototyping;software quality;agile model driven development;productivity;quality guarantee;software development predictability;Analytical models;Computer architecture;Concrete;Programming;Software;Testing;Unified modeling language;Agile Agile Model Driven Development;Agile Development;Agile Model Driven Development}
+}
+
+@InProceedings{1615066,
+  Title                    = {Evaluating software refactoring tool support},
+  Author                   = {Mealy, E. and Strooper, P.},
+  Booktitle                = {Software Engineering Conference, 2006. Australian},
+  Year                     = {2006},
+  Month                    = {April},
+  Pages                    = {10 pp.-},
+
+  Doi                      = {10.1109/ASWEC.2006.26},
+  ISSN                     = {1530-0803},
+  Keywords                 = {Java;formal specification;software maintenance;software prototyping;software quality;software tools;DESMET method;Java refactoring tool;software evolution;software maintenance;software refactoring tool;source code modification;system quality;Application software;Australia;Automation;Costs;Functional analysis;Information technology;Java;Software engineering;Software systems;Software tools}
+}
+
+@Article{GraphTransformations2006,
+  Title                    = {Applying a Model Transformation Taxonomy to Graph Transformation Technology },
+  Author                   = {Tom Mens and Pieter Van Gorp and DÃ¡niel VarrÃ³ and Gabor Karsai},
+  Journal                  = {Electronic Notes in Theoretical Computer Science },
+  Year                     = {2006},
+  Note                     = {Proceedings of the International Workshop on Graph and Model Transformation (GraMoT 2005) Graph and Model Transformation 2005 },
+  Number                   = {0},
+  Pages                    = {143 - 159},
+  Volume                   = {152},
+
+  Doi                      = {http://dx.doi.org/10.1016/j.entcs.2005.10.022},
+  ISSN                     = {1571-0661},
+  Keywords                 = {model transformation},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S1571066106001447}
+}
+
+@Article{surveyMens,
+  Title                    = {A Survey of Software Refactoring},
+  Author                   = {Mens, Tom and Tourw{\'e}, Tom},
+  Journal                  = {IEEE Trans. Softw. Eng.},
+  Year                     = {2004},
+
+  Month                    = feb,
+  Number                   = {2},
+  Pages                    = {126--139},
+  Volume                   = {30},
+
+  Acmid                    = {972286},
+  Address                  = {Piscataway, NJ, USA},
+  Doi                      = {10.1109/TSE.2004.1265817},
+  ISSN                     = {0098-5589},
+  Issue_date               = {February 2004},
+  Keywords                 = {Coding tools and techniques, programming environments/construction tools, restructuring, reverse engineering, and reengineering.},
+  Numpages                 = {14},
+  Publisher                = {IEEE Press},
+  Url                      = {http://dx.doi.org/10.1109/TSE.2004.1265817}
+}
+
+@Article{Nelson1996,
+  Title                    = {{A survey of reverse engineering and program comprehension}},
+  Author                   = {Nelson, Michael L},
+  Journal                  = {arXiv preprint cs/0503068},
+  Year                     = {1996}
+}
+
+@InProceedings{OsmanChaudron,
+  Title                    = {{An Assessment of Reverse Engineering Capabilities of UML CASE Tools}},
+  Author                   = {Osman, H and Chaudron, M R V},
+  Booktitle                = {2nd Annual International Conference Proceedings on Software Engineering Application},
+  Year                     = {2011},
+  Pages                    = {7--12}
+}
+
+@Article{paigetowards,
+  Title                    = {Towards Model Transformation with TXL},
+  Author                   = {Paige, Richard and Radjenovic, Alek},
+  Journal                  = {Metamodelling for MDA},
+  Pages                    = {162},
+
+  Publisher                = {Citeseer}
+}
+
+@InProceedings{peltier2001mtrans,
+  Title                    = {MTRANS: A general framework, based on XSLT, for model transformations},
+  Author                   = {Peltier, Mika{\"e}l and B{\'e}zivin, Jean and Guillaume, Gabriel},
+  Organization             = {Citeseer}
+}
+
+@Misc{Perf4j,
+  Title                    = {{Perf4j - performance statistics for Java code}},
+
+  Author                   = {Perf4j},
+
+  Url                      = {http://perf4j.codehaus.org/},
+  Urldate                  = {2014-01-01}
+}
+
+@InCollection{CDTPARSER,
+  Title                    = {Using the Eclipse C/C++ Development Tooling as a Robust, Fully Functional, Actively Maintained, Open Source C++ Parser},
+  Author                   = {Piatov, Danila and Janes, Andrea and Sillitti, Alberto and Succi, Giancarlo},
+  Booktitle                = {Open Source Systems: Long-Term Sustainability},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2012},
+  Editor                   = {Hammouda, Imed and Lundell, BjÃ¶rn and Mikkonen, Tommi and Scacchi, Walt},
+  Pages                    = {399-399},
+  Series                   = {IFIP Advances in Information and Communication Technology},
+  Volume                   = {378},
+
+  Doi                      = {10.1007/978-3-642-33442-9_45},
+  ISBN                     = {978-3-642-33441-2},
+  Language                 = {English},
+  Url                      = {http://dx.doi.org/10.1007/978-3-642-33442-9_45}
+}
+
+@InProceedings{5631934,
+  Title                    = {Checking UML Design Patterns in Java Implementations},
+  Author                   = {Pires, W. and Ramalho, F. and Ledo, A. and Serey, D.},
+  Booktitle                = {Software Components, Architectures and Reuse (SBCARS), 2010 Fourth Brazilian Symposium on},
+  Year                     = {2010},
+  Month                    = {Sept},
+  Pages                    = {120-129},
+
+  Doi                      = {10.1109/SBCARS.2010.22},
+  Keywords                 = {Java;Unified Modeling Language;object-oriented methods;pattern recognition;Java implementation;UML design pattern;pattern recognition;semantic constraint;Computational modeling;Java;Prototypes;Semantics;Software;System analysis and design;Unified modeling language;Design Patterns;Design Tests;MDA;UML Profile}
+}
+
+@Book{Pressman2001,
+  Title                    = {Software Engineering: A Practitioner's Approach},
+  Author                   = {Pressman, Roger S.},
+  Publisher                = {McGraw-Hill Higher Education},
+  Year                     = {2001},
+  Edition                  = {5th},
+
+  ISBN                     = {0072496681}
+}
+
+@Misc{ptidejTool,
+  Title                    = {{Ptidej 5.8}},
+
+  Author                   = {Ptidej},
+
+  Url                      = {http://www.ptidej.net/downloads/tools/ptidejtoolsuite},
+  Urldate                  = {2015-01-01}
+}
+
+@Misc{txlresources,
+  Title                    = {{Java Grammar in TXL}},
+
+  Author                   = {TXL Resources},
+  HowPublished             = {http://www.txl.ca/nresources.html},
+
+  Urldate                  = {2014-01-01}
+}
+
+@InProceedings{1357789,
+  Title                    = {UML-based reverse engineering and model analysis approaches for software architecture maintenance},
+  Author                   = {Riva, C. and Selonen, P. and Systa, T. and Xu, J.},
+  Booktitle                = {Software Maintenance, 2004. Proceedings. 20th IEEE International Conference on},
+  Year                     = {2004},
+  Month                    = {Sept},
+  Pages                    = {50-59},
+
+  Doi                      = {10.1109/ICSM.2004.1357789},
+  ISSN                     = {1063-6773},
+  Keywords                 = {Unified Modeling Language;reverse engineering;software architecture;software maintenance;UML;architectural rules;architecture analysis;bottom-up reverse engineering;large-scale product platform architecture;real-life product-line products;software architecture;software maintenance;top-down reverse engineering;Application software;Computer architecture;Data mining;Laboratories;Object oriented modeling;Reverse engineering;Software architecture;Software maintenance;Software systems;Unified modeling language}
+}
+
+@InProceedings{4019568,
+  Title                    = {Reverse Engineering of Design Patterns from Java Source Code},
+  Author                   = {Nija Shi and Olsson, R.A.},
+  Booktitle                = {Automated Software Engineering, 2006. ASE '06. 21st IEEE/ACM International Conference on},
+  Year                     = {2006},
+  Month                    = {Sept},
+  Pages                    = {123-134},
+
+  Doi                      = {10.1109/ASE.2006.57},
+  ISSN                     = {1938-4300},
+  Keywords                 = {Java;object-oriented programming;program compilers;program diagnostics;reverse engineering;Apache Ant;JHotDraw;Java AWT;Java source code;PINOT;Swing;code structure;design pattern classification;design pattern recovery;pattern detection;program understanding;reverse engineering;source code analysis;static program analysis;system behavior;Concrete;Data mining;Java;Packaging;Pattern analysis;Pattern classification;Pattern recognition;Prototypes;Reverse engineering;Software design}
+}
+
+@Misc{freemakersvn,
+  Title                    = {{FreeMaker}},
+
+  Author                   = {{SourceForge}},
+
+  Url                      = {http://freemarker.org/},
+  Urldate                  = {2015-02-01}
+}
+
+@Misc{jeditsvn,
+  Title                    = {{jEdit}},
+
+  Author                   = {{SourceForge}},
+
+  Url                      = {http://sourceforge.net/projects/jedit/},
+  Urldate                  = {2015-02-01}
+}
+
+@Book{ecore,
+  Title                    = {EMF: Eclipse Modeling Framework 2.0},
+  Author                   = {Steinberg, David and Budinsky, Frank and Paternostro, Marcelo and Merks, Ed},
+  Publisher                = {Addison-Wesley Professional},
+  Year                     = {2009},
+  Edition                  = {2nd},
+
+  ISBN                     = {0321331885}
+}
+
+@Article{stephan2009comparative,
+  Title                    = {A comparative look at model transformation languages},
+  Author                   = {Stephan, Matthew and Stevenson, Andrew},
+  Journal                  = {Software Technology Laboratory at Queens University},
+  Year                     = {2009}
+}
+
+@Article{Sutton2007,
+  Title                    = {{Recovering UML class models from C++: A detailed explanation}},
+  Author                   = {Sutton, A and Maletic, J I},
+  Journal                  = {Information and Software Technology},
+  Year                     = {2007},
+  Number                   = {3},
+  Pages                    = {212--229},
+  Volume                   = {49},
+
+  Annote                   = {cited By (since 1996)18; Scopus}
+}
+
+@InProceedings{Systa,
+  Title                    = {Understanding the behavior of Java programs},
+  Author                   = {Systa, T.},
+  Booktitle                = {Reverse Engineering, 2000. Proceedings. Seventh Working Conference on},
+  Year                     = {2000},
+  Pages                    = {214-223},
+
+  ISSN                     = {1095-1350}
+}
+
+@Misc{wekasvn,
+  Title                    = {{Weka Repository}},
+
+  Author                   = {{The University of Waikato}},
+
+  Url                      = {https://svn.cms.waikato.ac.nz/svn/weka/},
+  Urldate                  = {2015-02-01}
+}
+
+@Article{tilley1994programmable,
+  Title                    = {Programmable Reverse Engineering},
+  Author                   = {Tilley, Scott R. and Wong, Kenny and Storey, Margaret-Anne D. and Muller, Hausi A.},
+  Journal                  = {International Journal of Software Engineering and Knowledge Engineering (IJSEKE)},
+  Year                     = {1994},
+  Number                   = {4},
+  Pages                    = {501--520},
+  Volume                   = {4},
+
+  Publisher                = {World Scientific Publishing}
+}
+
+@InProceedings{1553682,
+  Title                    = {Reverse engineering of object oriented code},
+  Author                   = {Tonella, P.},
+  Booktitle                = {Software Engineering, 2005. ICSE 2005. Proceedings. 27th International Conference on},
+  Year                     = {2005},
+  Month                    = {May},
+  Pages                    = {724-725},
+
+  Doi                      = {10.1109/ICSE.2005.1553682},
+  Keywords                 = {object-oriented programming;program diagnostics;reverse engineering;diagram recovery;object oriented code;object oriented programming;reverse engineering;static code analysis;Algorithm design and analysis;Collaboration;Object oriented programming;Packaging;Programming profession;Reverse engineering;Scattering;Software engineering;Software maintenance;Unified modeling language}
+}
+
+@InProceedings{972750,
+  Title                    = {Reverse engineering of the UML class diagram from c++ code in presence of weakly typed containers},
+  Author                   = {Tonella, P. and Potrich, A.},
+  Booktitle                = {Software Maintenance, 2001. Proceedings. IEEE International Conference on},
+  Year                     = {2001},
+  Pages                    = {376-385},
+
+  Doi                      = {10.1109/ICSM.2001.972750},
+  ISSN                     = {1063-6773},
+  Keywords                 = {C++ language;reverse engineering;software maintenance;specification languages;C++ code;UML class diagram;inter-class relations;reverse engineering;weakly typed containers;Collaborative work;Computer languages;Containers;Data mining;Engines;Information resources;Java;Libraries;Reverse engineering;Unified modeling language}
+}
+
+@Article{Vinita2008,
+  Title                    = {On Reverse Engineering an Object-oriented Code into UML Class Diagrams Incorporating Extensible Mechanisms},
+  Author                   = {Vinita and Jain, Amita and Tayal, Devendra K.},
+  Journal                  = {SIGSOFT Softw. Eng. Notes},
+  Year                     = {2008},
+
+  Month                    = aug,
+  Number                   = {5},
+  Pages                    = {9:1--9:9},
+  Volume                   = {33},
+
+  Acmid                    = {1402527},
+  Address                  = {New York, NY, USA},
+  Articleno                = {9},
+  Doi                      = {10.1145/1402521.1402527},
+  ISSN                     = {0163-5948},
+  Issue_date               = {September 2008},
+  Keywords                 = {UML, class diagrams, object-oriented programming, reverse engineering},
+  Numpages                 = {9},
+  Publisher                = {ACM},
+  Url                      = {http://doi.acm.org/10.1145/1402521.1402527}
+}
+
+@Article{Visser2005,
+  Title                    = {A survey of strategies in rule-based program transformation systems },
+  Author                   = {Eelco Visser},
+  Journal                  = {Journal of Symbolic Computation },
+  Year                     = {2005},
+  Note                     = {Reduction Strategies in Rewriting and Programming special issue },
+  Number                   = {1},
+  Pages                    = {831 - 873},
+  Volume                   = {40},
+
+  Doi                      = {http://dx.doi.org/10.1016/j.jsc.2004.12.011},
+  ISSN                     = {0747-7171},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0747717105000349}
+}
+
+@Misc{VisualParadigm,
+  Title                    = {{Visual Paradigm for UML}},
+
+  Author                   = {{Visual Paradigm}},
+
+  Url                      = {http://www.visual-paradigm.com/},
+  Urldate                  = {2014-01-01}
+}
+
+@InProceedings{1421037,
+  Title                    = {Understanding object-oriented source code from the behavioural perspective},
+  Author                   = {Walkinshaw, N. and Roper, M. and Wood, M.},
+  Booktitle                = {Program Comprehension, 2005. IWPC 2005. Proceedings. 13th International Workshop on},
+  Year                     = {2005},
+  Month                    = {May},
+  Pages                    = {215-224},
+
+  Doi                      = {10.1109/WPC.2005.44},
+  ISSN                     = {1092-8138},
+  Keywords                 = {object-oriented programming;program slicing;remote procedure calls;reverse engineering;software maintenance;software tools;behavioural perspective;object-oriented source code understanding;object-oriented systems;program comprehension tool;program slicing;software engineering task;software maintenance;software method invocation;tool-supported code extraction technique;Data mining;Inspection;Libraries;Object oriented modeling;Programming profession;Runtime;Software engineering;Software maintenance;Software systems;Software testing;behavioural comprehension;hammock graphs;slicing}
+}
+
+@InProceedings{4054609,
+  Title                    = {Towards an AST-Based Approach to Reverse Engineering},
+  Author                   = {Wang, Xin and Xiaojie Yuan},
+  Booktitle                = {Electrical and Computer Engineering, 2006. CCECE '06. Canadian Conference on},
+  Year                     = {2006},
+  Month                    = {May},
+  Pages                    = {422-425},
+
+  Doi                      = {10.1109/CCECE.2006.277552},
+  Keywords                 = {Java;Unified Modeling Language;abstract data types;computer aided software engineering;reverse engineering;software maintenance;software tools;tree data structures;AST-based approach;Java source code;UML class diagram;abstract syntax trees;design model;reverse engineering;round-trip development;software implementation;software maintenance;visitor pattern;Computer aided software engineering;Design engineering;Educational institutions;Java;Reverse engineering;Software design;Software maintenance;Software tools;Tree data structures;Unified modeling language;AST;Reverse engineering;UML model}
+}
+
+@Book{WarmerOCL2003,
+  Title                    = {The Object Constraint Language: Getting Your Models Ready for MDA},
+  Author                   = {Warmer, Jos and Kleppe, Anneke},
+  Publisher                = {Addison-Wesley Longman Publishing Co., Inc.},
+  Year                     = {2003},
+
+  Address                  = {Boston, MA, USA},
+  Edition                  = {2},
+
+  ISBN                     = {0321179366}
+}
+
+@InProceedings{Zhao2008,
+  Title                    = {Discovering Program's Behavioral Patterns by Inferring Graph-Grammars from Execution Traces},
+  Author                   = {Chunying Zhao and Ates, K. and Jun Kong and Kang Zhang},
+  Booktitle                = {Tools with Artificial Intelligence, 2008. ICTAI '08. 20th IEEE International Conference on},
+  Year                     = {2008},
+  Month                    = {Nov},
+  Pages                    = {395-402},
+  Volume                   = {2},
+
+  Doi                      = {10.1109/ICTAI.2008.68},
+  ISSN                     = {1082-3409},
+  Keywords                 = {data mining;graph grammars;learning by example;program diagnostics;program visualisation;software maintenance;execution trace;formal model;graph-grammar induction approach;legacy system comprehension;program behavioral pattern discovery;sequential algorithm;software developer;visual environment;Application software;Cognition;Flowcharts;Humans;Lattices;Pattern analysis;Reverse engineering;Sequences;Software engineering;Unified modeling language;Graph-grammar Induction;Program Execution}
+}
+
+@InProceedings{5773385,
+  Title                    = {A Fully Dynamic Approach to the Reverse Engineering of UML Sequence Diagrams},
+  Author                   = {Ziadi, T. and Da Silva, M.A.A. and Hillah, L.M. and Ziane, M.},
+  Booktitle                = {Engineering of Complex Computer Systems (ICECCS), 2011 16th IEEE International Conference on},
+  Year                     = {2011},
+  Month                    = {April},
+  Pages                    = {107-116},
+
+  Doi                      = {10.1109/ICECCS.2011.18},
+  Keywords                 = {Unified Modeling Language;merging;object-oriented programming;program control structures;program diagnostics;reverse engineering;UML sequence diagram;alternative block;behavioral model;control flow structure;fully dynamic approach;k-tail merging algorithm;labeled transition system;object-oriented application;repeated block;reverse engineering;software system behavior;source code instrumentation;static analysis;Asynchronous transfer mode;Java;Merging;Object oriented modeling;Prototypes;Reverse engineering;Unified modeling language;UML sequence diagrams;execution traces;reverse engineering}
+}
+
+@Book{precisionRecallDef,
+  Title                    = {Information Retrieval: Data Structures and Algorithms},
+  Editor                   = {Frakes, William B. and Baeza-Yates, Ricardo},
+  Publisher                = {Prentice-Hall, Inc.},
+  Year                     = {1992},
+
+  Address                  = {Upper Saddle River, NJ, USA},
+
+  ISBN                     = {0-13-463837-9}
+}
+
+@Book{Fowler2000,
+  Title                    = {Refactoring: Improving the Design of Existing Code},
+  Publisher                = {Addison-Wesley Longman Publishing Co., Inc.},
+  Year                     = {1999},
+
+  Address                  = {Boston, MA, USA},
+
+  ISBN                     = {0-201-48567-2},
+  Key                      = {{$\!\!$}}
+}
+

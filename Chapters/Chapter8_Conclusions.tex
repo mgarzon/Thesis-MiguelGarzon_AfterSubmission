@@ -1,0 +1,87 @@
+\lhead{\emph{\leftmark}}  % Set the left side page header to 
+\chapter{Conclusions and Contributions}
+\label{chap:conclusion}
+In this thesis we presented a reverse engineering approach called umplification and the corresponding tool, the Umplificator. Umplification is the process of transforming step-by-step a base language program to an Umple program that merges textual modeling constructs directly into source code. 
+
+\section{Summary of Answers to Research Questions}
+
+We outline how the umplification approach and its underlying implementation addresses the  research questions identified at the beginning of the thesis.
+
+\paragraph*{RQ1. To what extent can we achieve automated umplification?}
+
+In Chapter \ref{chap:technology} we addressed this research question by exploring technology alternatives and developing a tool to implement the umplification reverse engineering capabilities. The effectiveness of the transformations were then evaluated in Chapter \ref{chap:evaluation}. The evaluation results showed that our approach and its current implementation are effective and efficient enough to be applied to real systems. In particular we were able to successfully umplify many real open-source systems at varying degrees of effectiveness, and were able to iteratively improve this effectiveness by adjusting rules.
+ 
+\paragraph*{RQ2. What transformation technology and transformations  will work effectively for umplification?}
+
+In Chapter \ref{chap:technology}  we discussed our experiments with ATL and TXL approaches. However in the end we selected an approach that uses a) the mature xDT family of parsing libraries (JDT, CDT, etc.) to process both code and textual models, and build in memory models; b) the Drools tool to transform the in-memory models, accomplishing the core umplification task; and c) our own generator technology to produce revised versions of the system. Details of the approach are expanded in the answer to the next research question.
+
+\paragraph*{RQ3. What should be the architecture, design and implementation of an umplification tool?}
+
+The implementation of the Umplificator, combining the technologies mentioned above, was discussed in depth in Chapter \ref{chap:technology}. The advantages of the selected approach enabled the following aspects, each of which we discussed in Chapter \ref{chap:technology}.
+
+\begin{enumerate}
+
+\item Separation of concerns
+
+\item Speed and scalability
+
+\item Centralization of knowledge
+
+\item Multi-level testing
+
+\item Robust parsing 
+
+\item Efficiency
+
+\item Agile development 
+
+\item Extensibility
+
+\item Reusability
+
+\end{enumerate}
+
+\paragraph*{RQ4. What would be an effective process for improving the accuracy of the umplification tool?}
+
+We presented in Chapter \ref{chap:evaluation} an approach adapted from the model often used in machine learning that  considerably improved the precision and recall of our transformations. This validation approach takes one set of systems as the `training set' and then takes another set as the `testing set' to see how well the Umplificator performs on unknown systems. The process is iterative; in other words, we tune the system based on problems found when working with the testing set. 
+One type of problem is  failure of the umplification to complete, at its various levels. Another type of problem is automatic umplification that doesn't match manual umplification of one of the test systems. To solve these problems, the Umplificator can be readily tuned by adding new mapping rules to cover `False Negative' cases, by refining existing rules to cover `False positive' cases or by correcting the refactoring helper functions when code injections are incorrectly inserted.
+
+\section{Contributions}
+
+The main contributions of this thesis are as follows:
+
+\begin{enumerate}
+\item The overall concept of umplification and the defined levels of refactoring;
+
+\item An understanding of how umplification compares with other reverse-engineering techniques (incrementality, minimal adjustment of code to prevent disruption);
+
+\item The implementation and analysis of integrating different transformation technologies;  resulting in the Umplificator tool itself;
+
+\item Case studies of Umplification, demonstrating strengths, weaknesses and opportunities. Results presented in this thesis are reproducible and repeatable. Popular and highly cited open-source projects such as JHotdraw and Weka are now fully rewritten in Umple. We also made improvements to Umple compiler  to support abstract classes, interfaces and top-level enumerations, as needed to support the case studies.
+
+\item Mapping rules for Umplification and the language for expressing these. We have employed a popular rule management system known as Drools. Drools offers a native rule language with a simple Java-like syntax. Rules can easily be added and refined by means of an editor with syntax highlighting and code completion.
+
+\item Detection of associations in a body of source code written in an object-oriented;
+programming language. We have investigated how associations are employed in both forward and reverse engineering and proposed a set of heuristics for the detection of these in source code.
+\end{enumerate}
+
+Major advantages of our work, as compared to other reverse engineering approaches, are the concept of incrementally, the ease of addition of mapping rules, and the preservation of the system in a textual format.
+
+\section{Future Work}
+
+Although the results presented here have demonstrated the effectiveness of the umplification approach, it could be further developed in a number of ways:
+
+\begin{description}
+\item[Umplify more Projects] We plan to apply the approach to other open source systems, gradually increasing the ability of the Umplificator to obtain a higher and higher first-pass precision on new systems it encounters.
+
+\item[State Machines Support] We also plan integrate the mapping rules for state machines and refine some of the existing rules to make them more maintainable. Our team's decision to consider state machines as the next model construct to analyze is based on the observation that there seems to be interesting research opportunities in that area.
+
+\item[IDE Integration] It would be beneficial to improve tools to support better IDE integration including a step-by-step guide to indicate the level of umplification achieved of a software project. The Umplificator Eclipse plugin could be improved by adding an Eclipse perspective to better present the available features of the Umplificator to end-users.
+
+\item[Evaluation with real developers] To date, we have theoretically demonstrated the benefits of the approach, as well as demonstrated its industrial practicality by  reverse-engineering open-source systems with the tool.  A next logical step, outside the scope of this thesis, is to evaluate its efficiency and precision with a representative set of software practitioners.  In particular,  it would be beneficial to subject the Umplificator to evaluation with real developers The process might work as follows: 1) Arrange for a group of users to umplify some small systems, some by hand, and others with the Umplificator. 2) Measure the speed and correctness of the result, and also administer a questionnaire to the participants. 3) Video developers as they umplify larger programs, while  encouraging them to think aloud. 4) Analyze the videos looking for places where the participants make mistakes, express frustration, spend a lot of time thinking, have to refer to help, etc. 5) Evaluate in a similar manner the language used to express the mapping rules. 
+
+\item[Exploring other types of software] Investigating the integration of algorithms for the umplification of mobile and Web applications which require enhancing the Umple Language itself and our tool support.
+
+\item[Umplifying code that matches other model elements] Investigating the detection of additional software patterns aligning with those supported by Umple (e.g keys) is also an interesting research opportunity for future researchers.
+
+\end{description}
