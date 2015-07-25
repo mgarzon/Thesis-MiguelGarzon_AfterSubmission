@@ -18,10 +18,10 @@ The main goal of this systematic review was to identify and classify different t
 
 To search the databases, a set of strings was first created for each of the research questions based on keywords extracted from the research question, augmented with synonyms.
 
-We designed a two-phase systematic review. In both phases, we searched for papers (including cited references) using the search engines in Table \ref{table:sourcesReviewed}. We then performed analyses of the related work to select a subset of papers that were truly relevant
+We designed a two-phase systematic review. In both phases, we searched for papers (including cited references) using the search engines in Table \ref{table:sourcesReviewed}. We then performed analyses of the related work to select a subset of papers that were truly relevant.
 
 In the first phase we paid special attention to  existing surveys and literature review papers to ensure we found any literature review answering our research question.
-In the second phase we  focused on technology and techniques, as opposed to existing reviews. 
+In the second phase we  focused on technologies and techniques, as opposed to existing reviews. 
 
 \begin{table}[ht]
 \caption{Selected sources for the literature search}
@@ -193,7 +193,14 @@ In \cite{Kollmann2001}, Gogolla and Kollman present a technique using both stati
 In \cite{Barowski}, Barowski and Cross propose a technique to extract dependency information from Java bytecode. This approach, however, is not able to express correctly the multiplicity of the recovered associations.
 
 Sutton and Maletic \cite{Sutton2007} propose a set of mappings that are intended to recover design-level UML class models from source code. They present their prototype tool, Pilfer, and use it to reverse engineer HypoDraw \cite{Hypodraw}, an open source tool.
-Gueheneuc \cite{GueheneucSystematic} presents a technique that infers associations, aggregation and composition relationships from Java programs using graph theory. However, their approach requires the availability and analysis of both static and dynamic models to build the class diagrams.
+
+%FINAL CHANGE START
+%TLFINAL added space below to start paragraph; also added space at end of change and added the word a in one place
+
+Gueheneuc \cite{GueheneucSystematic} presents a technique that infers associations, aggregation and composition relationships from Java programs using a constraint-based approach. 
+The author formalized the class relationships at the implementation level as conjunctions of four different properties: Exclusivity, invocation-site, lifetime and multiplicity properties. 
+However, their approach requires the availability and analysis of both static and dynamic models to build the class diagrams.
+%FINAL CHANGE END
 
 Commercial tools and widely used open source tools, including IBM Rational Software Architect \cite{ROSE}, Visual Paradigm \cite{VisualParadigm} and ArgoUML \cite{ArgoUML} lack configurability options and incremental reverse engineering capabilities. Moreover, they detect simple attributes, as well as one-way associations between classes but produce incomplete generated code (e.g. lacking methods and/or referential integrity) and fail to preserve semantics when the UML models derived from the tools are input in their own code generators \cite{kollmanToolsCurrent}. Some of the most popular reverse-engineering tools have been already discussed in Chapter \ref{chap:detections}.
 

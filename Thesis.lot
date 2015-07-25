@@ -10,42 +10,42 @@
 \contentsline {table}{\numberline {3.1}{\ignorespaces Refactorings to methods required for each transformation\relax }}{41}{table.caption.316}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Analysis of member variables of class Student\relax }}{50}{table.caption.481}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Umple primitive data types\relax }}{71}{table.caption.823}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Analyzing instance variables for presence in the constructor and getter/setters\relax }}{71}{table.caption.838}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Type of attribute based on their presence in constructor and access method patterns\relax }}{72}{table.caption.842}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Reverse-engineering tools evaluated\relax }}{72}{table.caption.843}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Analysis of reverse-engineering tools for the recovery of attributes\relax }}{73}{table.caption.850}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Analysis of reverse-engineering tools for the recovery of associations\relax }}{76}{table.caption.919}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Accessor methods parsed and analyzed\relax }}{77}{table.caption.920}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Mutator methods parsed and analyzed\relax }}{77}{table.caption.921}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Code elements parsed and analyzed for the different patterns\relax }}{78}{table.caption.925}
-\contentsline {table}{\numberline {4.10}{\ignorespaces Summary of mapping rules for the detection of associations in code, that will be converted into Umple associations\relax }}{79}{table.caption.926}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Umple primitive data types\relax }}{71}{table.caption.824}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Analyzing instance variables for presence in the constructor and getter/setters\relax }}{71}{table.caption.839}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Type of attribute based on their presence in constructor and access method patterns\relax }}{72}{table.caption.843}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Reverse-engineering tools evaluated\relax }}{72}{table.caption.844}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Analysis of reverse-engineering tools for the recovery of attributes\relax }}{73}{table.caption.851}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Analysis of reverse-engineering tools for the recovery of associations\relax }}{76}{table.caption.920}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Accessor methods parsed and analyzed\relax }}{77}{table.caption.921}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Mutator methods parsed and analyzed\relax }}{77}{table.caption.922}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Code elements parsed and analyzed for the different patterns\relax }}{78}{table.caption.926}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Summary of mapping rules for the detection of associations in code, that will be converted into Umple associations\relax }}{79}{table.caption.927}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of ATL and TXL technologies\relax }}{96}{table.caption.1106}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Third party technologies employed in the Umplificator tool\relax }}{104}{table.caption.1154}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Eclipse projects used in the Umplificator\relax }}{104}{table.caption.1156}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Sample uses of an AST for code analysis\relax }}{107}{table.caption.1181}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Rule attributes\relax }}{113}{table.caption.1201}
-\contentsline {table}{\numberline {5.6}{\ignorespaces The input Java Model elements\relax }}{117}{table.caption.1261}
-\contentsline {table}{\numberline {5.7}{\ignorespaces The input Java model elements produced\relax }}{128}{table.caption.1469}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Artifacts deployed during the building process of the Umplificator\relax }}{132}{table.caption.1506}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of ATL and TXL technologies\relax }}{96}{table.caption.1107}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Third party technologies employed in the Umplificator tool\relax }}{104}{table.caption.1155}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Eclipse projects used in the Umplificator\relax }}{104}{table.caption.1157}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Sample uses of an AST for code analysis\relax }}{107}{table.caption.1182}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Rule attributes\relax }}{113}{table.caption.1202}
+\contentsline {table}{\numberline {5.6}{\ignorespaces The input Java Model elements\relax }}{118}{table.caption.1262}
+\contentsline {table}{\numberline {5.7}{\ignorespaces The input Java model elements produced\relax }}{128}{table.caption.1470}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Artifacts deployed during the building process of the Umplificator\relax }}{133}{table.caption.1507}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Small examples used for first phase of validation\relax }}{144}{table.caption.1717}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Open-source systems umplified\relax }}{148}{table.caption.1841}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Results of umplification for JHotDraw\relax }}{152}{table.caption.1867}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Results of umplification for Weka\relax }}{153}{table.caption.1868}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Results of umplification for the Java bug reporting tool\relax }}{153}{table.caption.1869}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Results of umplification for JEdit\relax }}{153}{table.caption.1870}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Results of umplification for FreeMaker\relax }}{153}{table.caption.1871}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Results of umplification for the Java Financial Library\relax }}{154}{table.caption.1872}
-\contentsline {table}{\numberline {6.9}{\ignorespaces Results of umplification for Args4j\relax }}{154}{table.caption.1873}
-\contentsline {table}{\numberline {6.10}{\ignorespaces Reverse engineering execution times\relax }}{154}{table.caption.1878}
-\contentsline {table}{\numberline {6.11}{\ignorespaces Problems encountered while umplifying JHotDraw\relax }}{162}{table.caption.1964}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Small examples used for first phase of validation\relax }}{144}{table.caption.1718}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Open-source systems umplified\relax }}{148}{table.caption.1842}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Results of umplification for JHotDraw\relax }}{152}{table.caption.1868}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Results of umplification for Weka\relax }}{153}{table.caption.1869}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Results of umplification for the Java bug reporting tool\relax }}{153}{table.caption.1870}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Results of umplification for JEdit\relax }}{153}{table.caption.1871}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Results of umplification for FreeMaker\relax }}{153}{table.caption.1872}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Results of umplification for the Java Financial Library\relax }}{154}{table.caption.1873}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Results of umplification for Args4j\relax }}{154}{table.caption.1874}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Reverse engineering execution times\relax }}{154}{table.caption.1879}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Problems encountered while umplifying JHotDraw\relax }}{162}{table.caption.1965}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Selected sources for the literature search\relax }}{168}{table.caption.1975}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Inclusion criteria\relax }}{169}{table.caption.1982}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Exclusion criteria\relax }}{170}{table.caption.1983}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Filtered results from second-phase queries - Static approaches\relax }}{171}{table.caption.1985}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Filtered results from second-phase queries - Dynamic and hybrid approaches\relax }}{172}{table.caption.1986}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Application of the evaluation criteria to the key papers\relax }}{175}{table.caption.1989}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Selected sources for the literature search\relax }}{168}{table.caption.1976}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Inclusion criteria\relax }}{169}{table.caption.1983}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Exclusion criteria\relax }}{170}{table.caption.1984}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Filtered results from second-phase queries - Static approaches\relax }}{171}{table.caption.1986}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Filtered results from second-phase queries - Dynamic and hybrid approaches\relax }}{172}{table.caption.1987}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Application of the evaluation criteria to the key papers\relax }}{175}{table.caption.1990}
 \addvspace {10\p@ }

@@ -504,7 +504,8 @@ Similarly, both approaches allow us to separate concerns in a convenient way; gr
 
 \paragraph*{Output export} 
 
-TXL compiler can generate any type of text file. For instance, an ATL program can generate Umple files (files with extension .ump).
+%TLFINAL changed ATL to txl in second sentence below
+The TXL compiler can generate any type of text file. For instance, a TXL program can generate Umple files (files with extension .ump).
 
 ATL generates only XMI-based models as shown in Listing \ref{lst:atlOutput}. The generated model needs then to be transformed into an Umple model. Listing \ref{lst:atlOutput} shows a generated model containing a class named `Facility' with three attributes (definition omitted).
 
@@ -584,10 +585,16 @@ The process of umplifying an object-oriented software system in this architectur
 
 \begin{enumerate}
 \item  The input is a set of source code files in the base language and/or Umple.
+
 \item (Parser) The source code is parsed. 
-\item (Model Transformer) The source code is transformed into base-language model of the base language and Umple constructs.
+
+%TLFINAL changed following line
+\item (Model Transformer) The source code is transformed into a model of the base language and Umple constructs.
+
 \item (Transformer) The model previously obtained is entered into the next stage of the pipeline. The input model is transformed a model with additional Umple features using pre-defined mapping rules. 
+
 \item The target Umple model, is then validated. 
+
 \item (Generator) Finally, Umple code (.ump files) are generated from the Umple model.
 \end{enumerate}
 
@@ -715,6 +722,10 @@ public class Test {
 
 Note that the AST node type CompilationUnit is the type root of an AST (first row of above table) and the object returned by the ASTParser after completion of the parsing a Java file. The source range for the CompilationUnit type node is the entire source file, including leading and trailing whitespace and comments. In Java 1.4 to 1.7, a CompilationUnit is composed of 
 a \textit{PackageDeclaration}, \textit{ImportDeclaration}, and one or more of these types:  \textit{TypeDeclaration}, \textit{EnumDeclaration}, \textit{AnnotationTypeDeclaration}. 
+%FINAL CHANGE START
+Code comments, which are important from an understanding viewpoint, are preserved in the AST, parsed and transformed into Umple comments. \textit{Comment}, is the abstract base class for all AST nodes that represent comments. There are exactly three kinds of comments: line comments (\textit{LineComment}), block comments (\textit{BlockComment}), and doc comments (\textit{Javadoc}).
+%FINAL CHANGE END
+%TLFINAL added space below
 
 The code on the right of Table \ref{table:astanalysis} shows several examples of what can be done inside a visitor method:
 
@@ -931,7 +942,7 @@ The advantages of our mixed approach are enumerated below:
 
 \item [Centralization of knowledge] The different rules form a repository of knowledge that serves as a single point of truth. The rules are readable enough to be used as documentation. 
 
-\item [Multi-level testing] Each component in our implementation can be independently tested. This is further discussed in the next chapter of this thesis. Test can reveal if the addition of rules (or refinements) have invalidated existing transformations.
+\item [Multi-level testing] Each component in our implementation can be independently tested. This is further discussed in the next chapter of this thesis. Tests can reveal if the addition of rules (or refinements) have invalidated existing transformations.
 
 \item [Robust parsing] The CDT, JDT and PDT parsers are robust and well-maintained. This is very desired characteristics since languages like Java and C++ are in continuous development. For instance, JDT has been updated to comply with the different Java versions, from 1.4 to 1.8. In addition, the parsers are able to parse specific parts of the code (a method, a constructor, etc). This is a desired feature to comply with the incrementality requirements of the umplification approach. 
 
@@ -943,6 +954,16 @@ The advantages of our mixed approach are enumerated below:
 
 \item [Reusability] Pattern-matching conditions and actions in (Drools) rules can be reused to accommodate new transformations for different languages. 
 \end{description}
+%FINAL CHANGE START
+Furthermore, the estimated cost of our implementation, calculated using the \textit{COCOMO model} \cite{COCOMO}, with coefficients a=2.4 and b=1.05, is:
+
+\begin{itemize}
+\item \textit{Codebase Size}:   114725 LOC
+\item \textit{Duration} = 23.27 months
+\item \textit{Effort} = 1066.33 person-months
+\end{itemize}
+%FINAL CHANGE END
+%TLFINAL changed slash to hyphen in person-months
 
 \section{Automated Umplification Example}
 \label{sec:automatedUmplification}
@@ -1054,7 +1075,7 @@ rule "transformImportDeclaration"
  end
 \end{lstlisting}
 
-The package declaration is converted then into a namespace with the rule `transformNamespace' in Listing \ref{lst:transformNamespace}. We again ensure that the package declaration corresponds to the targeted UmpleClass. Note that in this rule we don't need to insert the namespace object into memory since we don't expect any rule to match it.
+The package declaration is converted then into a namespace with the rule `transformNamespace' in Listing \ref{lst:transformNamespace}. We again ensure that the package declaration corresponds to the targeted UmpleClass. Note that in this rule we do not need to insert the namespace object into memory since we do not expect any rule to match it.
 
 \begin{lstlisting}[language={drools},label={lst:transformNamespace}, caption=Rule transformNamespace]
 import function cruise.umplificator.rules
@@ -1092,7 +1113,7 @@ rule "appendFieldDeclaration"
 end
 \end{lstlisting}
 
-The \textit{eval} clauses in Listing \ref{lst:appendField}, ensure that the string representing the field information hasn't been appended before and (as before) that the field string is added to the Umple class owning it.
+The \textit{eval} clauses in Listing \ref{lst:appendField}, ensure that the string representing the field information has not been appended before and (as before) that the field string is added to the Umple class owning it.
 
 \begin{lstlisting}[language={drools},label={lst:appendMethod}, caption=Rule appendMethodDeclaration]
 import function cruise.umplificator.rules
@@ -1111,7 +1132,7 @@ rule "appendMethodDeclaration"
 end
 \end{lstlisting}
 
-The \textit{eval} clauses in the listing above, ensure that the string representing the method information hasn't been appended before and (as before) that the method string is added to the Umple class owning it. 
+The \textit{eval} clauses in the listing above, ensure that the string representing the method information has not been appended before and (as before) that the method string is added to the Umple class owning it. 
 At the end of this pattern matching process, the UmpleClass with name `Student' owns a depend, has a namespace and some remaining code that we called extra code. We show the Umple code in Listing \ref{lst:level1exampleGenerator}. The extra code in this code excerpt starts from Line 6 to 22.
 
 The code generated by the \textit{Generator}, from the input Umple model, is presented in Listing \ref{lst:level1exampleGenerator}. 
@@ -1158,7 +1179,7 @@ At this point of time, as illustrated in Figure \ref{fig:ruleModel2}, the Workin
 \end{figure}
 
 The rule engine then attempts to find objects matching the conditions in the rules. The only set of rules that can be matched to objects in the Working Memory are the rules related to attributes, since the only rules in the agenda are those for `LEVEL2' and the rules for `LEVEL1' have already been applied. In particular, the unique rule
-that can be executed at this moment is the rule named \textit{`Field\_CanBeUmpleAttribute'} since all other rules require an instance of an Umple attribute in memory. As we have illustrated before in Figure \ref{fig:ruleModel2}, no instances of an Umple attribute exist or have been added so far. Rule \textit{`Field\_CanBeUmpleAttribute'} is presented in Listing \ref{lst:FieldCanBeUmpleAttribute}.
+that can be executed at this moment is the rule named \textit{`Field\_CanBeUmpleAttribute'} since all other rules require an instance of an Umple attribute in memory. As we have illustrated before in Figure \ref{fig:ruleModel2}, no instance of an Umple attribute exists or has been added so far. Rule \textit{`Field\_CanBeUmpleAttribute'} is presented in Listing \ref{lst:FieldCanBeUmpleAttribute}.
 
 \begin{lstlisting}[language={drools},label=lst:FieldCanBeUmpleAttribute, caption=Rule  FieldCanBeUmpleAttribute]
 rule "FieldCanBeUmpleAttribute"
@@ -1323,7 +1344,7 @@ class Mentor {
 }
 \end{lstlisting}
 
-The parser receives the source code from the mentioned listings, creates an Abstract Syntax Tree representation of it and transfers it to the Model Extractor. The Model Extractor uses the AST representation to create a Java model which is then traversed and decomposed into pieces by means of a Java class visitor. Table \ref{table:exampleTransformerAssocs} presents all the Java Elements collected by the Java visitor. An important fact that we haven't revealed so far is that the parser is able to parse a sequence of \textit{independent} Java statements. As is required here, the Java parser will ignore the Umple code from the code excerpts in Listings \ref{lst:exampleAutomated1}-\ref{lst:exampleAutomated2} and will simply take into account the Java elements found. Contrary to what we have presented in the previous subsection (automated umplification of attributes), a TypeDeclaration will not be generated by the parser as shown in Table \ref{table:exampleTransformerAssocs}.
+The parser receives the source code from the mentioned listings, creates an Abstract Syntax Tree representation of it and transfers it to the Model Extractor. The Model Extractor uses the AST representation to create a Java model which is then traversed and decomposed into pieces by means of a Java class visitor. Table \ref{table:exampleTransformerAssocs} presents all the Java Elements collected by the Java visitor. An important fact that we have not revealed so far is that the parser is able to parse a sequence of \textit{independent} Java statements. As is required here, the Java parser will ignore the Umple code from the code excerpts in Listings \ref{lst:exampleAutomated1}-\ref{lst:exampleAutomated2} and will simply take into account the Java elements found. Contrary to what we have presented in the previous subsection (automated umplification of attributes), a TypeDeclaration will not be generated by the parser as shown in Table \ref{table:exampleTransformerAssocs}.
 
 \begin{table}[h]
 \caption{The input Java model elements produced}
@@ -1481,7 +1502,7 @@ The preliminary release of the tool allows developers to:
 
 \begin{itemize}
 \item Select an Open-Source \textbf{repository}: The user can select projects from GoogleCode, SourceForge or GitHub.
-\item Select an Open-Source \textbf{project} to umplify. The projects listed (in the second combo-box) have been automatically selected based on a number predefined criteria. The criteria for project selection are that the project is marked as a small or medium-size system and that it is written in Java or C++.
+\item Select an Open-Source \textbf{project} to umplify. The projects listed (in the second combo-box) have been automatically selected based on a number of predefined criteria. The criteria for project selection are that the project is marked as a small or medium-size system and that it is written in Java or C++.
 \item Select the \textbf{level} of refactoring desired.
 \item Select one of more \textbf{options}. The options have been described during our discussion of the command-line tool.
 \end{itemize}

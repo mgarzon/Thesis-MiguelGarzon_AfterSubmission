@@ -74,7 +74,7 @@ The various parts of a transformation rule have their own  specific notation:
 
 \item Line 1. Every transformation possesses a name. The source and target languages are referenced by stating both language names after the transformation name.
 
-\item Line 2. The order of application of the rule is determined by the integer number following the keyword \textit{order}. Rules with lower order numbers are executed first. Order of application of the rules doesn't matter when two or more rules possess the same order number. 
+\item Line 2. The order of application of the rule is determined by the integer number following the keyword \textit{order}. Rules with lower order numbers are executed first. Order of application of the rules does not matter when two or more rules possess the same order number. 
 
 \item Line 3. Local and global variables to be used in the transformation rule are specified following the keyword \textit{params}.
 
@@ -98,10 +98,10 @@ Transformation rules defined in a general but formal language can then be adapte
 % The following Listing is totally mixed up with the subsequent figure in the tool, but when I export a pdf it looks OK. Very strange.
 % MG. Strange, I see the same problem. PDF will be fine however.
 
-% Also, you are using tabs, which Latex doesn't process properly in listings. You need to use two spaces instead of tabs. I have made this change in this case, but make the change elsewhere and watch out in other code.
+% Also, you are using tabs, which Latex does not process properly in listings. You need to use two spaces instead of tabs. I have made this change in this case, but make the change elsewhere and watch out in other code.
 % Fixed MG.
 
-% Readers will be confused as to the detailed sublanguages (e.g. the reference to isInterface(), ::TypeDeclariation, .name and so on. How are you going to define these? I know you say this is 'informal' (actually I changed it to 'semiformal' which is the correct term), but nonetheless it should be understandable. Are you referring to JDT contstructs? If so then there is the problem that you haven't introduced JDT yet. Perhaps the solution is to put much of Chapter 5 before this (discussing how you tried ATL, TXL and then briefly xDT), then have this chapter, which can now refer to JDT, and finally discuss the implification in another separate chapter. There would end up being one more chapter than there is now.
+% Readers will be confused as to the detailed sublanguages (e.g. the reference to isInterface(), ::TypeDeclariation, .name and so on. How are you going to define these? I know you say this is 'informal' (actually I changed it to 'semiformal' which is the correct term), but nonetheless it should be understandable. Are you referring to JDT contstructs? If so then there is the problem that you have not introduced JDT yet. Perhaps the solution is to put much of Chapter 5 before this (discussing how you tried ATL, TXL and then briefly xDT), then have this chapter, which can now refer to JDT, and finally discuss the implification in another separate chapter. There would end up being one more chapter than there is now.
 % But there may be another way to make this all make sense, such as defining the semi-formal language in a simple way here.
 % MG Fixed by using a more abstract way of presenting the language. 
 
@@ -224,7 +224,10 @@ these member variables into attributes or associations variables. Furthermore, w
 \subsection{Transformations Rules to Create Attributes}
 %FINAL CHANGE START
 The first part of our analysis, as stated at the beginning of this Chapter, consists of analyzing how real projects implement attributes. In previous work done by co-researchers \cite{UmpleAttributes} seven projects picked randomly from open source repositories were studied. The seven projects included: from GoogleCode: fizzbuzz, ExcelLibrary, ndependencyinjection and Java Bug Reporting Tool; from SourceForge: jEdit and Freemaker; and from Freecode (formerly Freshmeat): Java Financial Library.
+Refer to Table \ref{table:umplifiedSystems} for details about the systems. 
+%LAST added reference to table in chapter 6
 %FINAL CHANGE END
+
 From these projects, we identified 1831 member variables in the 469 classes analyzed. From the member variables found, 1211 were instance variables and 620 were class (static) variables. The results of this study showed that:
 
 \begin{itemize}
@@ -515,7 +518,7 @@ As seen in Chapter \ref{chap:core}, a variable represents an association if all 
 \begin{itemize}
 \item Its declared type is a Reference type (generally a class in the current system).
 \item The variable field is simple, or the variable field is a container (also known as a collection).
-\item The class in which the variable is declared, stores, access and/or manipulates instances of the variable type.
+\item The class in which the variable is declared, stores, accesses and/or manipulates instances of the variable type.
 \end{itemize}
 
 In the Umplificator, the tool we will describe in Chapter \ref{chap:technology}, these conditions are expressed as rules. The transformation of variables into associations involves a considerable number of transformations and code manipulations. In order to guarantee the correct extraction of an association and to avoid false-negative cases, we consider not only the getter and setter of the fields but also the iteration call sequences (iterators). Table \ref{table:accessors} and Table \ref{table:mutators} present the list of methods considered (parsed and analyzed) in order to infer associations. These methods can be categorized as mutator and accessor methods. In the tables, W is the name of the class at the other end of the association. We have considered those collections of elements defined using Map, Set, List and Hashtable classes (from the Java collections framework or the Standard Template Library in C++).
@@ -556,7 +559,7 @@ List\textless W\textgreater getWs()   & Returns immutable list of links  \\
 
 \paragraph*{Inferring role names}
 
-Roles names can be easily inferred from the field name. This doesn't impose a challenge since the field name is always visible during static analysis of source code.
+Roles names can be easily inferred from the field name. This does not impose a challenge since the field name is always visible during static analysis of source code.
 
 \paragraph*{Inferring directionality}
 
@@ -564,8 +567,11 @@ To infer the directionality of the association, we consider both classes linked 
 
 \paragraph*{Inferring multiplicities}
 
-The process of inferring multiplicities from source code starts by analyzing the fields. If the field is an array, or a collection, the multiplicity is many `0..*'. If the field is not an array or collection, the multiplicity is `0..1'. To infer the other multiplicity patterns, analyses of constructors, mutators and accessor methods need to be performed. Recovery of multiplicities in the umplification approach ignores all constraints involving lower-bound (n) and upper-bound (m) since that would require \textit{dynamically} counting the number of instances created \cite{Kollmann2001}.
-
+The process of inferring multiplicities from source code starts by analyzing the fields. If the field is an array, or a collection, the multiplicity is many `0..*'. If the field is not an array or collection, the multiplicity is `0..1'. To infer the other multiplicity patterns, analyses of constructors, mutators and accessor methods need to be performed.
+%FINAL CHANGE START
+Recovery of multiplicities in the umplification approach ignores all constraints involving lower-bound (n) and upper-bound (m) since that would require either \textit{dynamically} counting the number of instances created \cite{Kollmann2001} or parsing arbitrary algorithmic code.
+%FINAL CHANGE END
+%TLFINAL adjusted to add a few more words since constraints might be detectable statically in certain conditions
 More specifically, Table \ref{table:patternsElements} presents the code elements that need to be inspected in order to infer the different patterns.
 
 \begin{table}
@@ -585,8 +591,7 @@ More specifically, Table \ref{table:patternsElements} presents the code elements
     \end{tabular}
 \end{table}
 
-Other special cases were taking into account when dealing with associations with an upper-bound greater than one. For instance, in Java code created prior to the introduction generics (i.e. Java 1.4), it was not necessary to typecast  objects as much as it was afterwards. For this reason, we need to inspect the add or remove methods to determine the type of object contained (added or removed) by the collection. Most of the other tools we have briefly discussed in this chapter lack mechanisms to infer the type held by a collection. 
-
+Other special cases were taking into account when dealing with associations with an upper-bound greater than one. For instance, in Java code created prior to the introduction generics (i.e. Java 1.4), it was not necessary to typecast  objects as much as it was afterwards. For this reason, we need to inspect the add or remove methods to determine the type of object contained (added or removed) by the collection. Most of the other tools we have briefly discussed in this chapter lack mechanisms to infer the type held by a collection.
 For instance, a model reverse-engineered from Java 1.4 might, in some tools, result in a one-to-one association between \textit{Mentor} and \textit{List} when in reality the association should be a one-to-many association between \textit{Mentor} and \textit{Student}.
 
 The mapping rules obtained from our analysis are summarized in Table \ref{table:assocsRules} and implemented in Chapter \ref{chap:technology}. Helper functions (in light blue) are also presented in the Table. 

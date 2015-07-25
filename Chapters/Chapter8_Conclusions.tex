@@ -44,12 +44,13 @@ The implementation of the Umplificator, combining the technologies mentioned abo
 \paragraph*{RQ4. What would be an effective process for improving the accuracy of the umplification tool?}
 
 We presented in Chapter \ref{chap:evaluation} an approach adapted from the model often used in machine learning that  considerably improved the precision and recall of our transformations. This validation approach takes one set of systems as the `training set' and then takes another set as the `testing set' to see how well the Umplificator performs on unknown systems. The process is iterative; in other words, we tune the system based on problems found when working with the testing set. 
-One type of problem is  failure of the umplification to complete, at its various levels. Another type of problem is automatic umplification that doesn't match manual umplification of one of the test systems. To solve these problems, the Umplificator can be readily tuned by adding new mapping rules to cover `False Negative' cases, by refining existing rules to cover `False positive' cases or by correcting the refactoring helper functions when code injections are incorrectly inserted.
+One type of problem is  failure of the umplification to complete, at its various levels. Another type of problem is automatic umplification that does not match manual umplification of one of the test systems. To solve these problems, the Umplificator can be readily tuned by adding new mapping rules to cover `False Negative' cases, by refining existing rules to cover `False positive' cases or by correcting the refactoring helper functions when code injections are incorrectly inserted.
 
 \section{Contributions}
 
 The main contributions of this thesis are as follows:
 
+% FINAL CHANGE START - NOT DONE YET
 \begin{enumerate}
 \item The overall concept of umplification and the defined levels of refactoring;
 
@@ -64,7 +65,7 @@ The main contributions of this thesis are as follows:
 \item Detection of associations in a body of source code written in an object-oriented;
 programming language. We have investigated how associations are employed in both forward and reverse engineering and proposed a set of heuristics for the detection of these in source code.
 \end{enumerate}
-
+% FINAL CHANGE END
 Major advantages of our work, as compared to other reverse engineering approaches, are the concept of incrementally, the ease of addition of mapping rules, and the preservation of the system in a textual format.
 
 \section{Future Work}
@@ -73,7 +74,9 @@ Although the results presented here have demonstrated the effectiveness of the u
 
 \begin{description}
 \item[Umplify more Projects] We plan to apply the approach to other open source systems, gradually increasing the ability of the Umplificator to obtain a higher and higher first-pass precision on new systems it encounters.
-
+% FINAL CHANGE START
+\item[Incorporate other object-oriented programming languages] We plan to add support for C++ and PHP languages. In particular, we need to create new mapping rules for those idioms that were not already considered for Java. For instance, in C++ we need to analyze the content of header files. The work to be done targets exclusively the \textit{Transformer} component of the Umplificator, since parsing and base language model generation is achieved by means of the CDT/PDT frameworks.
+% FINAL CHANGE END
 \item[State Machines Support] We also plan integrate the mapping rules for state machines and refine some of the existing rules to make them more maintainable. Our team's decision to consider state machines as the next model construct to analyze is based on the observation that there seems to be interesting research opportunities in that area.
 
 \item[IDE Integration] It would be beneficial to improve tools to support better IDE integration including a step-by-step guide to indicate the level of umplification achieved of a software project. The Umplificator Eclipse plugin could be improved by adding an Eclipse perspective to better present the available features of the Umplificator to end-users.

@@ -17,7 +17,10 @@ In the next section, we state the research problem addressed by this thesis and 
 \section{Problem Statement}
 The problem to be addressed in this research is as follows:
 
-Developers currently often work with large volumes of legacy code. Tools exist to allow them to extract models or transform their code in a variety of ways. However doing so tends to result in a system that is quite different in syntax and structure. They are thus inhibited from using reverse engineering tools except to generate documentation. The Umple technology partially solves this problem by allowing incremental addition of modeling constructs into familiar programming language code. This allows developers to maintain the essential `familiarity' with their code as they gradually transform it. Converting to Umple (Umplification) has been done manually; indeed, it was applied to the Umple compiler itself \cite{Lethbridge2010c} –  but it ought to have tool support so it can be done in a more automatic, systematic and error-free manner on large systems. We present an approach that automatically extracts the model from an object-oriented system in the form of Umple code. 
+Developers currently often work with large volumes of legacy code. Tools exist to allow them to extract models or transform their code in a variety of ways. However doing so tends to result in a system that is quite different in syntax and structure. They are thus inhibited from using reverse engineering tools except to generate documentation.
+
+%TLFINAL split paragraph here
+The Umple technology partially solves this problem by allowing incremental addition of modeling constructs into familiar programming language code. This allows developers to maintain the essential `familiarity' with their code as they gradually transform it. Converting to Umple (Umplification) has been done manually; indeed, it was applied to the Umple compiler itself \cite{Lethbridge2010c} –  but it ought to have tool support so it can be done in a more automatic, systematic and error-free manner on large systems. We present an approach that automatically extracts the model from an object-oriented system in the form of Umple code. 
 
 \section{Research Questions}
 
@@ -27,7 +30,7 @@ The guiding research questions that have motivated our research are the followin
 Although, in previous work, other members of our research group have found that the process of extracting an Umple model from source code can be relatively easily performed if done manually; our investigation focuses on performing the process automatically by means of a reverse engineering technology. 
 In this thesis, we address this research question by exploring technology alternatives, developing and refining a tool, and then evaluating and assessing the effectiveness of the products of the tool. The latter is described in Chapter \ref{chap:evaluation}.
 %FINAL CHANGE END
-%Notice the rewrite above. You don't give answers in this part of the thesis. Leave that to the conclusions/
+%Notice the rewrite above. You do not give answers in this part of the thesis. Leave that to the conclusions/
 %MG OK.
 \paragraph*{RQ2. What transformation technology and transformations  will work effectively for umplification?}
 
@@ -58,43 +61,48 @@ Our investigations focus on the automation of the umplification process. As we w
 
 This hypothesis is investigated throughout our research activities.
 
-\section{Research Activities}
+\section{Research Methodology and Activities}
+%FINAL CHANGE START
+This thesis follows the design science methodology \cite{designscience}, in which research is done through the process of building and evaluating products. During our research we follow the five process steps of the design cycle. The knowledge obtained by constructing and evaluating the artifacts is used as input for a better understanding of the problem. 
 
 The major steps in the methodology that were conducted to address our research questions and verify our hypothesis are stated below:
 
 \begin{enumerate}
-\item 	Manually perform umplification to gain an understanding of what will be needed;
+\item \textit{Awareness of the problem}: Manually perform umplification to gain an understanding of what will be needed;
 
-\item 	Iteratively develop the Umplificator tool, exploring the effectiveness of various reusable components and transformation approaches. This includes selection or creation of an easy-to-use tool to express transformations from the base language to Umple;
+\item \textit{Suggestion}: Propose a technique and a set of heuristics to perform automated umplification of Umple attributes and associations;
+
+\item \textit{Development}:	Iteratively develop the Umplificator tool, exploring the effectiveness of various reusable components and transformation approaches. This includes selection or creation of an easy-to-use tool to express transformations from the base language to Umple;
 % We want to avoid complex XML-based solutions since usability will be key.
 
 % I think this bit about XML-based is going to be confusing at this point. The reader will wonder what you mean by XML-based solutions. Discuss this in another part of the thesis if not already discussed, and remove here.
 % MG. 
-\item 	Start with a major case study (JHotDraw), iteratively umplifying it and improving the Umplificator until the Umple version of the case study compiles and a significant number of constructs have been umplified successfully;
+\item  \textit{Evaluation}: 
+\begin{itemize}
+\item Start with a major case study (JHotDraw), iteratively umplifying it and improving the Umplificator until the Umple version of the case study compiles and a significant number of constructs have been umplified successfully;
+\item Iteratively develop more and more transformations to convert additional Base Language code into Umple. Introduce additional case studies until the Umplificator works well on 5-10 reasonably large open-source systems. Java will be the first targeted language in our exploration; 
+\end{itemize}
 
-\item 	Iteratively develop more and more transformations to convert additional Base Language code into Umple. Introduce additional case studies until the Umplificator works well on 10-15 reasonably large open-source systems. Java will be the first targeted language in our exploration; 
-
-\item 	Compare the work to alternative approaches.
+\item \textit{Conclusion} -- Compare the work to alternative approaches and outline the areas for future research.
 \end{enumerate}
-
+%FINAL CHANGE END
 \section{Thesis Contributions}
 
 The major research contributions of this thesis are:
 
 \begin{itemize}
-\item The overall concept of automated umplification.
+\item The overall concept of automated umplification;
 
-\item An understanding of how umplification compares with other reverse engineering techniques.
+\item An understanding of how umplification compares with other reverse engineering techniques;
 
-\item The Umplificator tool itself.
+\item The Umplificator tool itself;
 
-\item Case studies of Umplification, demonstrating strengths, weaknesses and opportunities.
+\item Case studies of Umplification, demonstrating strengths, weaknesses and opportunities;
 
-\item Mapping rules for Umplification and the language for expressing these. These should be general-purpose and easily modifiable to allow future researchers, and even end users, to add to them.
+\item Mapping rules for Umplification and the language for expressing these. These should be general-purpose and easily modifiable to allow future researchers, and even end users, to add to them;
 
 \item Detection of associations in a body of source code written in an object-oriented programming language. 
 \end{itemize}
-
 
 \section{Thesis Outline}
 

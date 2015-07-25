@@ -292,7 +292,7 @@ try {
 
 The test in Listing \ref{lst:JavaToUmpleVariablesToAttributes003}, performs the umplification process on the Java input file, and compares the content of the code produced by the Umplificator with the code of the expected Umple file. The comparison is done with the help of method \textit{assertOuputAndFile}.
 
-Testing the different components of our infrastructure allows for better defect management by representing bugs as failing tests, effectively diminishing the time and effort required to localize any defects that might occur. In other words, this multi-level testing helps to make sure that a change or addition of a new feature doesn't break any existing functionality and if there is any bug to quickly locate the defective component. When a defect is uncovered, it might be one of the following:
+Testing the different components of our infrastructure allows for better defect management by representing bugs as failing tests, effectively diminishing the time and effort required to localize any defects that might occur. In other words, this multi-level testing helps to make sure that a change or addition of a new feature does not break any existing functionality and if there is any bug to quickly locate the defective component. When a defect is uncovered, it might be one of the following:
 
 \begin{enumerate}
 \item Defect in the way the base language code is tokenized and converted into an abstract syntax tree.
@@ -319,61 +319,12 @@ We generated Java code from these examples using the Umple compiler, and then us
 \label{fig:preValidation}
 \end{figure}
 
-Table \ref{table:umpleexamples} lists the Umple examples used in this pre-validation phase, as well as  some statistics about them (number of lines of code of the Umple model, the number of lines of code of the corresponding Java system and the number of Java classes).
-
-\begin{table}
-\caption{Small examples used for first phase of validation}
-\label{table:umpleexamples}
+\begin{figure}[H]
 \centering
-\begin{tabular}{p{6cm}|rrr}
-\toprule
-\rowcolor[HTML]{BBDAFF}
-\textbf{Name} & \textbf{\#Umple LOC} & \textbf{\#Java LOC} & \textbf{\#  Files} \\ \midrule
-2DShapes & 44 & 509 & 9\\ \hline
-AccessControl & 67 & 1560 & 6\\ \hline
-Accidents & 42 & 730 & 4\\ \hline
-Accommodations & 102 & 2215 & 9\\ \hline
-AfghanRainDesign & 132 & 2610 & 13\\ \hline
-Airline & 51 & 1800 & 8\\ \hline
-Banking System A & 87 & 2400 & 13\\ \hline
-Banking System B & 74 & 1650 & 12\\ \hline
-Canal System & 69 & 2222 & 14\\ \hline
-Decisions & 148 & 4153 & 15\\ \hline
-Card Games (Oh Hell and Whist) & 134 & 2051 & 8\\ \hline
-Claim (Insurance) & 19 & 408 & 2\\ \hline
-Community Association & 68 & 1591 & 9\\ \hline
-Co-op Education System & 69 & 2420 & 10\\ \hline
-DMM Overview & 59 & 1165 & 10\\ \hline
-DMM Source Object Hierarchy & 91 & 1774 & 16\\ \hline
-DMM Relationship Hierarchy & 135 & 1119 & 31\\ \hline
-DMM CTF & 93 & 932 & 4\\ \hline
-Election System & 83 & 2875 & 11\\ \hline
-Elevator System A & 42 & 1307 & 4\\ \hline
-Elevator System B & 56 & 1971 &11\\ \hline
-Genealogy A & 29 & 670 & 2\\ \hline
-Genealogy B & 32 & 945 & 2\\ \hline
-Genealogy C & 36 & 1017 & 3\\ \hline
-Geographical Information System & 52 & 1174 & 11\\ \hline
-Hospital & 65 & 1923 & 9\\ \hline
-Hotel & 47 & 1888 & 10\\ \hline
-Insurance & 63 & 1417 & 10\\ \hline
-Inventory Management & 44 & 1753 & 7\\ \hline
-Library & 42 & 1595 & 10\\ \hline
-Mail Order System- Client Order & 38 & 1895 & 8\\ \hline
-Manufacturing Plant Controller & 84 & 3089 & 11\\ \hline
-Pizza System & 67 & 1555 & 9 \\ \hline
-Police System & 64 & 3186 & 10\\ \hline
-Political Entities & 32 & 842 & 5\\ \hline
-Real Estate & 79 & 2071 & 8\\ \hline
-Routes and Locations & 127 & 2089 & 9\\ \hline
-School & 18 & 397 & 9\\ \hline
-TelephoneSystem & 38 & 1838 & 7\\ \hline
-University System & 32 & 1206 & 4\\ \hline
-Vending Machine & 97 & 1696 & 8\\ \hline
-WarehouseSystem & 83 & 2831 & 12\\ \hline
-\bottomrule
-\end{tabular}
-\end{table}
+\includegraphics{Figures/accessControl.pdf} 
+\caption{UML Class diagram of the Access Control system}
+\label{fig:accessControlExample}
+\end{figure}
 
 For instance, the \textit{`Access Control Example'}, representing a system for managing access to facilities, is comprised of 6 classes, 8 associations, and 10 attributes. The Umple model is presented in Listing \ref{lst:accessControlEx} together with corresponding visual representation, a UML class diagram generated using our online tool (Figure \ref{fig:accessControlExample}). The unit test comparing the input umple model and the umplified model is shown in Listing \ref{lst:acsExample}.
 
@@ -442,12 +393,6 @@ associationClass RoleFacilityAccessRight
 }
 \end{lstlisting}
 %http://yuml.me/4aab4a38
-\begin{figure}[h]
-\centering
-\includegraphics{Figures/accessControl.pdf} 
-\caption{UML Class diagram of the Access Control system}
-\label{fig:accessControlExample}
-\end{figure}
 
 \begin{lstlisting}[style=java,label={lst:acsExample},caption=Unit test to assert the access control example.]
 @Test
@@ -509,11 +454,68 @@ public void AccessControlExample(){
 }
 \end{lstlisting}
 
-In the test case above, the level of refactoring includes only attributes (Umple associations have not been extracted) so we are interested in the classes, generalizations and the attributes of each class. We assert that the classes have been correctly detected and that the attributes in each class have been correctly extracted (attribute type, attribute name and additional features). For instance, in Line 49 we assert that the attributes is \textbf{lazy}, since the variable is not one of the parameters in the constructor of the Java class \textit{Facility} (Java code is not shown here).
+In the test case above, the level of refactoring includes only attributes (Umple associations have not been extracted) so we are interested in the classes, generalizations and the attributes of each class. We assert that the classes have been correctly detected and that the attributes in each class have been correctly extracted (attribute type, attribute name and additional features). For instance, in Line 49 we assert that the attribute is \textbf{lazy}, since the variable is not one of the parameters in the constructor of the Java class \textit{Facility} (Java code is not shown here).
 
 This pre-validation essentially demonstrates with a high level of confidence that the Umplificator works, at a basic level on a significant amount of Java code, but with a known and consistent structure. It was fairly easy to tailor our transformation rules to reverse-engineer code that we had generated ourselves. We know exactly what the structure of this code is; we know that it will be the same throughout each example, and we know that it will not change over time (or if it does change, at least we have control of both forward and reverse engineering). Pre-validation, says nothing about whether the Umplificator can work `in the wild', against unknown code. That is what we have to do in the next stages of validation.
 
 Our pre-validation is similar to the concept of `dogfooding' \cite{ash2003web}, in that we are testing the Umplificator on our own code. But it is not `full' dogfooding since we have not yet attempted to convert the whole of the Umple compiler back from generated Java to Umple; the Umple compiler is very large and has a number of complexities that will make this a challenge we leave to future work.
+
+
+Table \ref{table:umpleexamples} lists the Umple examples used in this pre-validation phase, as well as  some statistics about them (number of lines of code of the Umple model, the number of lines of code of the corresponding Java system and the number of Java classes).
+
+\begin{table}
+\caption{Small examples used for first phase of validation}
+\label{table:umpleexamples}
+\centering
+\begin{tabular}{p{6cm}|rrr}
+\toprule
+\rowcolor[HTML]{BBDAFF}
+\textbf{Name} & \textbf{\#Umple LOC} & \textbf{\#Java LOC} & \textbf{\#  Files} \\ \midrule
+2DShapes & 44 & 509 & 9\\ \hline
+AccessControl & 67 & 1560 & 6\\ \hline
+Accidents & 42 & 730 & 4\\ \hline
+Accommodations & 102 & 2215 & 9\\ \hline
+AfghanRainDesign & 132 & 2610 & 13\\ \hline
+Airline & 51 & 1800 & 8\\ \hline
+Banking System A & 87 & 2400 & 13\\ \hline
+Banking System B & 74 & 1650 & 12\\ \hline
+Canal System & 69 & 2222 & 14\\ \hline
+Decisions & 148 & 4153 & 15\\ \hline
+Card Games (Oh Hell and Whist) & 134 & 2051 & 8\\ \hline
+Claim (Insurance) & 19 & 408 & 2\\ \hline
+Community Association & 68 & 1591 & 9\\ \hline
+Co-op Education System & 69 & 2420 & 10\\ \hline
+DMM Overview & 59 & 1165 & 10\\ \hline
+DMM Source Object Hierarchy & 91 & 1774 & 16\\ \hline
+DMM Relationship Hierarchy & 135 & 1119 & 31\\ \hline
+DMM CTF & 93 & 932 & 4\\ \hline
+Election System & 83 & 2875 & 11\\ \hline
+Elevator System A & 42 & 1307 & 4\\ \hline
+Elevator System B & 56 & 1971 &11\\ \hline
+Genealogy A & 29 & 670 & 2\\ \hline
+Genealogy B & 32 & 945 & 2\\ \hline
+Genealogy C & 36 & 1017 & 3\\ \hline
+Geographical Information System & 52 & 1174 & 11\\ \hline
+Hospital & 65 & 1923 & 9\\ \hline
+Hotel & 47 & 1888 & 10\\ \hline
+Insurance & 63 & 1417 & 10\\ \hline
+Inventory Management & 44 & 1753 & 7\\ \hline
+Library & 42 & 1595 & 10\\ \hline
+Mail Order System- Client Order & 38 & 1895 & 8\\ \hline
+Manufacturing Plant Controller & 84 & 3089 & 11\\ \hline
+Pizza System & 67 & 1555 & 9 \\ \hline
+Police System & 64 & 3186 & 10\\ \hline
+Political Entities & 32 & 842 & 5\\ \hline
+Real Estate & 79 & 2071 & 8\\ \hline
+Routes and Locations & 127 & 2089 & 9\\ \hline
+School & 18 & 397 & 9\\ \hline
+TelephoneSystem & 38 & 1838 & 7\\ \hline
+University System & 32 & 1206 & 4\\ \hline
+Vending Machine & 97 & 1696 & 8\\ \hline
+WarehouseSystem & 83 & 2831 & 12\\ \hline
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 \section{Initial Phase of Validation}
@@ -784,12 +786,12 @@ It can be seen from the above that the transformer is the process that dominates
 
 
 \section{Second Phase of Validation}
-
-This phase of our validation approach will adapt the model often used in machine learning. We take one set of systems as the `training set' and then take another set as the `testing set' to see how well the Umplificator performs on unknown systems.
-
+%FINAL CHANGE START
+This phase of our validation approach follows the general approach used in machine learning. We take one set of systems as the `training set' and then take another set as the `testing set' to see how well the Umplificator performs on unknown systems.
+%FINAL CHANGE END
 Our initial training set is the set of systems we worked with in the previous phase.
 
-We adapt this process to be iterative; in other words, we  tune the system based on problems found when working with the testing set. One type of problem is  failure of the umplification to complete, at its various levels. Another type of problem is automatic umplification that doesn't match manual umplification of one of the test systems.
+We adapt this process to be iterative; in other words, we  tune the system based on problems found when working with the testing set. One type of problem is  failure of the umplification to complete, at its various levels. Another type of problem is automatic umplification that does not match manual umplification of one of the test systems.
 
 The testing set hence becomes a new `training set'. The idea is to pick yet another fresh testing set, and repeat. Over time the umplificator should get better and better.
 
@@ -846,7 +848,7 @@ we generate a file with a name that follows this structure '\textit{umplify\_dir
 
 Where \textit{myFile} will can be one the following:
 \begin{itemize}
-\item (Doesn't Exist) -- If the Umplificator hasn't even been run on that version yet
+\item (Doesn't Exist) -- If the Umplificator has not even been run on that version yet
 \item F.Umplify.Score.log -- If the Umplificator failed to even umplify the version to level 0
 \item \{012\}.Umplify.Score.log -- If the Umplificator succeeds on a specific level, a file starting with that level number (a project can potentially have all 3 levels and therefore can have 3 of these files).
 \end{itemize}
@@ -997,7 +999,7 @@ Table \ref{table:umplifiedResultsSystems1} showed the results of detection of Um
 \textbf{3.} Attributes were not correctly recovered. 23 Attributes were declared as immutable when they were not. By analyzing the cases, we discovered that some fields had setters that were not following the standard conventions (i.e., setX()). For instance, in class \textit{ArrowTip}, the setter for field angle was named 'updateAngle' rather than setAngle(...).
   &  Umplificator.Transformer: The helper, in charge of analyzing method declarations to determine whether or not the method sets a given field, was updated to take into account this naming convention.\\ \hline
   
-\textbf{4.} Independent enumerations (Enum X in file X.java) were correctly identified by the Umplificator; however the Umple compiler didn't handle them since it could at the time only generate classes and interfaces. 
+\textbf{4.} Independent enumerations (Enum X in file X.java) were correctly identified by the Umplificator; however the Umple compiler did not handle them since it could at the time only generate classes and interfaces. 
   &  Umple.compiler: We introduced a new construct named 'top' to put extra code at the top level. Refer to issue 614 in our defect tracking list \cite{UmpleIssues} \\ \hline
 
 \textbf{5.} \textit{package-info.java} files that are used to provide a home for package level documentation and package level annotations were not handled correctly.
@@ -1028,7 +1030,7 @@ The next system we focused on was the machine learning tool Weka \cite{Weka}. As
 
 Another problem encountered while umplifying the Weka classes was related to inner classes. A Class such as \textit{weka.attributeSelection.BestFirst} uses two inner classes to manage the nodes and linked lists in a best-first search. The Umplificator was attempting to match types inside other data types, resulting in an infinite loop. In addition, since the Umple compiler does not currently support inner classes, the solution chosen to remedy this situation was to ignore inner classes and process them as Umple's `extra code'. 
 
-Initial Umplification results for Weka nonetheless had a precision of 85\% when it comes to attributes and 38\% for 1-to-many associations. Table \ref{table:umplifiedResultsSystems1} summarizes the results. Note that a precision of 38\% doesn't mean that the Umplificator has missed 62\% associations of this type. It means that some of them were not correctly transformed into Umple (e.g. incorrect navigability, role names or transformation of accessor/mutator methods). The extensibility and flexibility of our tool allows us to add and refine rules without having to recompile the system. That is, rules in a external rule file (extension .drl) can be added to the working memory when running the Umplificator on the command line.
+Initial Umplification results for Weka nonetheless had a precision of 85\% when it comes to attributes and 38\% for 1-to-many associations. Table \ref{table:umplifiedResultsSystems1} summarizes the results. Note that a precision of 38\% does not mean that the Umplificator has missed 62\% associations of this type. It means that some of them were not correctly transformed into Umple (e.g. incorrect navigability, role names or transformation of accessor/mutator methods). The extensibility and flexibility of our tool allows us to add and refine rules without having to recompile the system. That is, rules in a external rule file (extension .drl) can be added to the working memory when running the Umplificator on the command line.
 
 \subsection{Args4j - Modernization of the Code Base}
 

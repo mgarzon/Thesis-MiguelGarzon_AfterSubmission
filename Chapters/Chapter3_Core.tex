@@ -31,7 +31,11 @@ The umplification process has several properties. It is:
  \item \textbf{implicit-knowledge} conserving. 
 \end{enumerate}
 
-The approach is \textbf{incremental} because it can be performed in multiple small steps that produce (quickly) a new version of the system that has a small amount of additional modeling information, such as the presence of one new type of UML/Umple construct. At each step, the system remains compilable. The approach proceeds incrementally performing additional transformations until the desired level of abstraction is achieved.	These incremental transformations allow for user interaction to provide needed information that may be missing or hard to automatically obtain because the input (the source code) does not follow any of the idioms the automatic umplification tool is yet able to recognize. This characteristic of umplification allows developers, if they wish, to repeatedly re-introspect the transformed program and manually validate each change with an understanding of the incremental purpose of the change.
+The approach is \textbf{incremental} because it can be performed in multiple small steps that produce (quickly) a new version of the system that has a small amount of additional modeling information, such as the presence of one new type of UML/Umple construct. At each step, the system remains compilable. The approach proceeds incrementally performing additional transformations until the desired level of abstraction is achieved.	These incremental transformations allow for user interaction to provide needed information that may be missing or hard to automatically obtain because the input (the source code) does not follow any of the idioms the automatic umplification tool is yet able to recognize.
+%FINAL CHANGE START - Clarifying the mess I did on the incrementality concept.
+This characteristic of umplification allows developers, if they wish, to repeatedly re-introspect the transformed program and manually validate each change with an understanding of the incremental purpose of the change. From a technical perspective, incrementality is reflected in the fact that the tool implementing our approach accepts Umple as input. That is, an Umple model with a higher level of abstraction can be recovered from an Umple model containing fewer umplified constructs. 
+%FINAL CHANGE END
+%TLFINAL - minor adjustment made
 
 The approach is \textbf{transformational} because it modifies the original source rather than generating something completely new. It first translates the original language (Java, C++ etc.) to an initial Umple version that looks very much like the original, and then translates step-by-step as more and more modeling constructs are added, replacing original code.
 
@@ -64,8 +68,10 @@ This transformation step is further decomposed into sub-steps depending on the a
 	If variable \textit{a} is declared in Class A and the type of \textit{a} is a reference type B, then \textit{a} is transformed into an Umple Association with ends \{a, b\}. At the same time, if a variable \textit{b} in class B is detected that represents the inverse relationship, then the association becomes bidirectional. The accessor and mutator methods of variable \textit{a} (and \textit{b}) are adapted to conform to the Umple-generated methods. Multiplicities and role names are recovered by inspecting both types A and B.
 
 	\item [Transformation 2c: Transformation of variables to UML/Umple state machines]
-	If \textit{a} is declared in Class A, has not been classified previously as an attribute or association, has a fixed set of values, and changes in the values are triggered by events, and not by a set method, then a is transformed to a state machine.	
-%We will not cover this aspect of umplification further in this thesis, and will leave the focus on attributes and associations.
+	If \textit{a} is declared in Class A, has not been classified previously as an attribute or association, has a fixed set of values, and changes in the values are triggered by events, and not by a set method, then a is transformed to a state machine.
+% FINAL CHANGE START
+We will not cover this aspect of umplification further in this thesis, and will leave the focus on attributes and associations.
+% FINAL CHANGE END
 % If time allows, state machines will be cover since I have some rules for it.
 % TL: I suggest covering it lightly, indicating that further investigation is future work
 \end{description}
@@ -95,8 +101,11 @@ As mentioned before, as part of each transformation step, the accessor, mutator,
 		\\ \bottomrule
     \end{tabular}
 \end{table}
-
-In the following section, we provide a more detailed view of the transformation cases and an example to summarize the main points of the umplification process. To help distinguish between Umple and Java code presented in this thesis, the Umple examples appear in solid borders with blue shading, pure Java examples have solid borders with green shading. 
+%FINAL CHANGE START
+Mutator and accessor methods are detected in source code based on the naming conventions and semantics of the declarations.
+%FINAL CHANGE END
+In the following section, we provide a more detailed view of the transformation cases and an example to summarize the main points of the umplification process. To help distinguish between Umple and Java code presented in this thesis, the Umple examples appear in solid borders with blue shading, whereas pure Java examples have solid borders with green shading. 
+%TLFINAL added word whereas above
 
 \subsubsection{More Details of the Initial Transformation}
 
@@ -106,8 +115,10 @@ After this, various syntactic changes are made (Transformation 1) to adapt the c
 First the base language notation for inheritance (e.g. `extends' in Java) or interface implementation (e.g. `implements') is changed into the Umple notation `isA'. This Umple keyword is used uniformly to represent the generalization relationship for classes, interfaces and traits. The same notation is used for all three for flexibility -- so that, for example, an interface can be converted to a class with no change to its specializations, or a trait can be generated as a superclass in languages such as C++ where multiple inheritance is allowed.
 
 After this, the dependency notation in the native language (e.g. `import' in Java) is changed to the `depend' notation in Umple. Finally `package' declarations are transformed into Umple namespace declarations. 
-Transformations made as part of these first refactoring steps, are one-to-one direct and simple mappings between constructs in the base language and Umple. No methods need changing. The final output after execution of the above transformations is an Umple model/program that can be compiled in the same manner as the original base language code. At this point, any available test cases may be run to ensure that the program's semantics are preserved.
-
+Transformations made as part of these first refactoring steps, are one-to-one direct and simple mappings between constructs in the base language and Umple. No methods need changing. The final output after execution of the above transformations is an Umple model/program that can be compiled in the same manner as the original base language code.
+%FINAL CHANGE START:   * Point out that you run tests on the system.
+At this point, any available test cases may be run to ensure that the program's semantics are preserved.
+%FINAL CHANGE END
 \subsubsection{Details of the Transformations to Create Attributes}
 
 The goal of this step is to transform member variables meeting certain conditions into Umple attributes (Transformation 2a). An Umple attribute, as discussed in Chapter 2, it is more than just a plain private variable: It is designed to be exclusively operated on by mutator methods, accessed by accessor methods and (depending on its properties) automatically initialized in the constructor. These methods, in turn can have semantics such as preconditions and tracing injected into them. 
@@ -133,9 +144,9 @@ As discussed earlier, in the various cases of the refactoring steps, analyses ar
 \item The class in which the variable is declared, stores, access and/or manipulates instances of the variable type.
 
 \end{itemize}
-
-The sort of refactoring discussed above for attributes is also performed when associations are found, although the actual code logic is more sophisticated.
-
+%FINAL CHANGE START
+The sort of refactoring discussed above for attributes is also performed when associations are found, although the actual code logic is more sophisticated. In a context in which a field, being part of the association (i.e., one of the associations ends), references a class whose code is not available, the class is declared as \textit{external}. Refer to section 2.1.3 for more details on \textit{external} associations. This is beneficial in a context where the software makes heavy use of a framework for which only binary code is available. 
+%FINAL CHANGE END
 A complete analysis on the different transformations cases is presented in Chapter \ref{chap:detections}. From this analysis, a set of transformations rules are derived. The actual implementation of the transformations rules is discussed in Section \ref{chap:tool}.
 
 \section{Motivations}
@@ -304,7 +315,7 @@ class Mentor {
 \end{lstlisting}
 
 The Umple code for classes Student and Person, after completion of the first refactoring step, is presented in Listings \ref{lst:studentUmple0} and \ref{lst:personUmple0}. 
-
+\newpage
 \begin{lstlisting}[style=UmpleIn,caption=Student.ump,label=lst:studentUmple0]
 namespace university;
 class Student {
@@ -400,6 +411,7 @@ The results of this analysis allow us to generate Umple code with the required t
 namespace university;
 
 class Student { 
+ isA Person;
  Integer id; 
  lazy Boolean isActive; 
  immutable name; 
@@ -423,18 +435,18 @@ class Student {
 
 The following gives details of Listing \ref{lst:studentUmple}:
 \begin{itemize}
-\item Line 4: Field id becomes an Umple attribute. Getter getId() and setter setId() are removed.
+\item Line 5: Field id becomes an Umple attribute. Getter getId() and setter setId() are removed.
 
 
-\item Line 5: Field isActive becomes an Umple attribute of Boolean type.  As the field is not required in the constructor, we mark it as `lazy' so the Umple compiler does not generate a constructor argument for this attribute. 
+\item Line 6: Field isActive becomes an Umple attribute of Boolean type.  As the field is not required in the constructor, we mark it as `lazy' so the Umple compiler does not generate a constructor argument for this attribute. 
 
-\item Line 6: Field name becomes an Umple attribute and is marked as `immutable'. Immutable attributes must be specified in the constructor, and no setter is provided. In this particular example, the input Java code (Listing \ref{lst:StudentJava}) does not contain code that sets this variable anywhere, therefore it is transformed into an immutable Umple attribute. 
+\item Line 7: Field name becomes an Umple attribute and is marked as `immutable'. Immutable attributes must be specified in the constructor, and no setter is provided. In this particular example, the input Java code (Listing \ref{lst:StudentJava}) does not contain code that sets this variable anywhere, therefore it is transformed into an immutable Umple attribute. 
 
-\item Line 7: Field MAX\_PER\_GROUP becomes a constant (special type of Umple attribute). We have drawn this conclusion because of the field modifiers (e.g. static final) or because of the ALL\_CAPS convention. 
+\item Line 8: Field MAX\_PER\_GROUP becomes a constant (special type of Umple attribute). We have drawn this conclusion because of the field modifiers (e.g. static final) or because of the ALL\_CAPS convention. 
 
-\item Line 8-12: As the getter for field name was custom in Listing \ref{lst:StudentJava}, we have adapted it so it conforms to the code that is generated by the Umple compiler. A code injection has been used for this purpose. In this case, the code will inject two lines to be executed before the getName() method returns.
+\item Line 9-13: As the getter for field name was custom in Listing \ref{lst:StudentJava}, we have adapted it so it conforms to the code that is generated by the Umple compiler. A code injection has been used for this purpose. In this case, the code will inject two lines to be executed before the getName() method returns.
 
-\item Code in Lines 32-37 in Listing \ref{lst:StudentJava} is not touched by this transformation; The same exact code is found in the Umple file in Listing \ref{lst:studentUmple} (Lines 13-19).
+\item Code in Lines 51-55 in Listing \ref{lst:StudentJava} is not touched by this transformation; The same exact code is found in the Umple file in Listing \ref{lst:studentUmple} (Lines 14-20).
 
 \end{itemize}
 
@@ -795,7 +807,8 @@ Since there was not a proper set of test cases available, we run a simulation of
 
 Once the code/model has  passed through the two first refactoring steps, we perform the transformation step aiming to recover associations from the input classes.
 
-The result (`atm.banking') produced is shown in Figure \ref{fig:atmBanking3}. For conciseness, only classes with associations are shown as part of this class diagram. 
+The result (`atm.banking') produced is shown in Figure \ref{fig:atmBanking3}. For conciseness, only classes with associations are shown as part of this class diagram. As mentioned before, the source code of the ATM system can be found at \cite{atmsystem}.
+%LAST - see above
 
 For instance, the following is a summary of the various considerations that were taken into account to perform this transformation step on classes \textit{ATM} and \textit{Session}:
 
