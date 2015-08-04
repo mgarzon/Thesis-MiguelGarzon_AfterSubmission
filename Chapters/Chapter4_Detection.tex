@@ -594,7 +594,7 @@ More specifically, Table \ref{table:patternsElements} presents the code elements
 Other special cases were taking into account when dealing with associations with an upper-bound greater than one. For instance, in Java code created prior to the introduction generics (i.e. Java 1.4), it was not necessary to typecast  objects as much as it was afterwards. For this reason, we need to inspect the add or remove methods to determine the type of object contained (added or removed) by the collection. Most of the other tools we have briefly discussed in this chapter lack mechanisms to infer the type held by a collection.
 For instance, a model reverse-engineered from Java 1.4 might, in some tools, result in a one-to-one association between \textit{Mentor} and \textit{List} when in reality the association should be a one-to-many association between \textit{Mentor} and \textit{Student}.
 
-The mapping rules obtained from our analysis are summarized in Table \ref{table:assocsRules} and implemented in Chapter \ref{chap:technology}. Helper functions (in light blue) are also presented in the Table. 
+The mapping rules obtained from our analysis are summarized in Table \ref{table:assocsRules} and implemented in Chapter \ref{chap:technology}. 
 
 \begin{table}[h]
 \caption{Summary of mapping rules for the detection of associations in code, that will be converted into Umple associations}
@@ -614,25 +614,18 @@ The mapping rules obtained from our analysis are summarized in Table \ref{table:
         isCustomMethodDeclaration & Returns a code injection required to adapt the existing method declaration.\\ \hline
         isCustomConstructor  & Returns a code injection required to adapt the existing constructor.  
 \\ \hline
-\rowcolor{aliceblue} 
         isAssociationEndExternal & Returns true if one of the classes involved in the association is not available. See description of external classes in Chapter \ref{chap:background}.
 \\   \hline
-\rowcolor{aliceblue} 
         isVariableInConstructor & Returns true if the member variable is in the class constructor.
 \\    \hline
-\rowcolor{aliceblue}  
         hasVariableGetter & Returns true if the member variable possesses a getter. 
 \\   \hline     
-\rowcolor{aliceblue}
         hasVariableSetter & Returns true if the member variable possesses a setter. 
 \\    \hline     
-\rowcolor{aliceblue}  
 		getTypeOfCollection& Returns the type contained in a collection. 
 \\    \hline       
-\rowcolor{aliceblue} 
 		resetExtraCode & Searches for code that is not required and needs to be removed (fields, methods, constructors) from classes. 
-\\  \hline
-\rowcolor{aliceblue} 
+\\  \hline 
  		refactorMethod & Uses code injections gathered from other rules/functions to refactor methods.\\ 
 \bottomrule
 \end{tabular}
@@ -642,12 +635,8 @@ The mapping rules obtained from our analysis are summarized in Table \ref{table:
 \section{Summary}
 
 This chapter  studied how attributes and associations are used in practice; and investigated how these modeling abstractions can be extracted by analyzing source code. We reviewed
-the capabilities possessed by various reverse-engineering tools for detecting these model elements. 
+the capabilities possessed by various reverse-engineering tools for detecting these model elements. We identified various  combinations of multiplicity for association ends and analyzed their impact on code generation and reverse engineering. 
 
-We identified various  combinations of multiplicity for association ends and analyzed their impact on code generation and reverse engineering. 
-
-Finally, we presented the  mapping rules for the detection of constructs in source code, focusing on Java.
-
-In the next chapter, we show more concretely how these rules have been implemented in this research.
+Finally, we presented the  mapping rules for the detection of constructs in source code, focusing on Java. In the next chapter, we show more concretely how these rules have been implemented in this research.
 
 

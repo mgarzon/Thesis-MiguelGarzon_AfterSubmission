@@ -19,10 +19,10 @@
 % Set up the Title Page
 \title  {Reverse Engineering Object-Oriented Systems into Umple: An Incremental and Rule-Based Approach}
 \authors  {\texorpdfstring
-            {\href{mgarzon@uottawa.ca}{Miguel A. Garz\'{o}n Torres}}
+            {\href{mgarzon@uottawa.ca}{Miguel Garz\'{o}n}}
             {Miguel A. Garz\'{o}n}
             }
-\date  {\normalsize \copyright  Miguel Garz\'{o}n, Ottawa, Canada, 2015}
+\date  {\normalsize \copyright Miguel Garz\'{o}n, Ottawa, Canada, 2015}
 
 \maketitle
 %% ----------------------------------------------------------------
@@ -39,7 +39,8 @@
 
 %% ----------------------------------------------------------------
 % The "Funny Quote Page"
-\pagestyle{empty}  % No headers or footers for the following pages
+%\pagestyle{empty}  % No headers or footers for the following pages
+\setcounter{page}{2}
 \null\vfill
 % Now comes the "Funny Quote", written in italics
 \textit{``Live as if you were to die tomorrow. Learn as if you were to live forever.''}
@@ -59,7 +60,7 @@ Mahatma Gandhi
 
 This thesis investigates a novel approach to reverse engineering, in which modeling information such as UML associations, state machines and attributes is incrementally added to code written in Java or C++, while maintaining the system in a textual format. Umple is a textual representation that blends modeling in UML with programming language code. The approach, called umplification, produces a program with behavior identical to the original one, but written in Umple and enhanced with model-level abstractions. As the resulting program is Umple code, our approach eliminates the distinction between code and model. We implemented automated umplification in  a tool called the Umplificator. The tool is rule-driven: code, including Umple code, is parsed and processed into an internal representation, which is then operated on by rules; transformed textual code and model, in Umple, is then generated. The rules used to transform code to model have been iteratively refined by using the tool on a variety of open-source software systems.
 
-The thesis consists of three main parts. The first part (Chapters 1 and 2) present the research questions and research methodology, as well as introducing Umple and the background necessary to understand the rest of the thesis. The umplification method is presented at increasing levels of detail through Chapters 3 and 4. Chapters 5 and 6 present the tool and evaluation of our approach, respectively. An analysis of related work, and comparison to our own, appears in Chapter 7.
+The thesis consists of three main parts. The first part (Chapters 1 and 2) present the research questions and research methodology, as well as introducing Umple and the background necessary to understand the rest of the thesis. The umplification method is presented at increasing levels of detail through Chapters 3 and 4. Chapters 5 and 6 present the tool and evaluation of our approach, respectively. An analysis of related work, and comparison to our own, appears in Chapter 7. Finally, conclusions and future work directions are presented in Chapter 8.
 }
 
 \clearpage  % Abstract ended, start a new page
@@ -81,9 +82,9 @@ I thank each of the members of the Complexity Reduction in Software Engineering 
 
 I wish to deeply thank the University of Ottawa for being my second home for the past 10 years and for offering me all the support required to carry out my research work.
 
-I would also like to thank my whole family for the support they provided me through my entire life. In particular, I would like to thank my mother Patricia, my brothers Laura and Sebastian for their love and encouragement during this busy period of my life.
+I would also like to thank my whole family for the support they provided me through my entire life. In particular, I would like to thank my mother Patricia, my brothers Laura and Sebastian for their love and continuous encouragement during this busy period of my life.
 
-Last, but not least, I would like to thank my wife Idalia for her understanding and love during the past few years and for her contribution on the graphics of this thesis.
+Last, but not least, I must express my gratitude to Idalia for her understanding and love during the past few years and for her contribution on the graphics of this thesis.
 }
 \clearpage  % End of the Acknowledgements
 %% ----------------------------------------------------------------

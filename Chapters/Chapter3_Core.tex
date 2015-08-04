@@ -116,9 +116,9 @@ First the base language notation for inheritance (e.g. `extends' in Java) or int
 
 After this, the dependency notation in the native language (e.g. `import' in Java) is changed to the `depend' notation in Umple. Finally `package' declarations are transformed into Umple namespace declarations. 
 Transformations made as part of these first refactoring steps, are one-to-one direct and simple mappings between constructs in the base language and Umple. No methods need changing. The final output after execution of the above transformations is an Umple model/program that can be compiled in the same manner as the original base language code.
-%FINAL CHANGE START:   * Point out that you run tests on the system.
+%LAST START:   * Point out that you run tests on the system.
 At this point, any available test cases may be run to ensure that the program's semantics are preserved.
-%FINAL CHANGE END
+%LAST END
 \subsubsection{Details of the Transformations to Create Attributes}
 
 The goal of this step is to transform member variables meeting certain conditions into Umple attributes (Transformation 2a). An Umple attribute, as discussed in Chapter 2, it is more than just a plain private variable: It is designed to be exclusively operated on by mutator methods, accessed by accessor methods and (depending on its properties) automatically initialized in the constructor. These methods, in turn can have semantics such as preconditions and tracing injected into them. 
@@ -144,9 +144,10 @@ As discussed earlier, in the various cases of the refactoring steps, analyses ar
 \item The class in which the variable is declared, stores, access and/or manipulates instances of the variable type.
 
 \end{itemize}
-%FINAL CHANGE START
-The sort of refactoring discussed above for attributes is also performed when associations are found, although the actual code logic is more sophisticated. In a context in which a field, being part of the association (i.e., one of the associations ends), references a class whose code is not available, the class is declared as \textit{external}. Refer to section 2.1.3 for more details on \textit{external} associations. This is beneficial in a context where the software makes heavy use of a framework for which only binary code is available. 
-%FINAL CHANGE END
+%LAST START - Added case of external..
+The sort of refactoring discussed above for attributes is also performed when associations are found, although the actual code logic is more sophisticated. In a context in which a field, being part of the association (i.e., one of the associations ends), references a class whose code is not available, the class is declared as \textit{external}. Refer to Section 2.1.3 for more details on \textit{external} associations. This is beneficial in a context where the software makes heavy use of a framework for which only binary code is available. 
+%LAST END
+
 A complete analysis on the different transformations cases is presented in Chapter \ref{chap:detections}. From this analysis, a set of transformations rules are derived. The actual implementation of the transformations rules is discussed in Section \ref{chap:tool}.
 
 \section{Motivations}
